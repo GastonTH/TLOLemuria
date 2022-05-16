@@ -9,6 +9,8 @@ public class EnemyController : MonoBehaviour
 
     public int currentHealth;
     
+    public int xp = 27;
+    
     private Animator m_animator;
 
     

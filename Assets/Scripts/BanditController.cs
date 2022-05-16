@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using UIScripts;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -22,6 +23,8 @@ public class BanditController : MonoBehaviour, CommonActions {
     private float coldDown;
     private float timeNextAttack;
 
+    public Heroe myHeroe;
+
     //public Joystick _joystick;
 
     void Start () {
@@ -35,6 +38,11 @@ public class BanditController : MonoBehaviour, CommonActions {
         GameObject.Find("Canvas").transform.Find("dmg").GetComponent<Button>().onClick.AddListener(TakeDamage);
         GameObject.Find("Canvas").transform.Find("attack").GetComponent<Button>().onClick.AddListener(Attack);
         //_joystick = GameObject.Find("Canvas").transform.Find("Dynamic Joystick").GetComponent<Joystick>();
+        
+        // recogeremos el heroe del gamemanager
+        myHeroe = GameObject.Find("GameManager").GetComponent<GameManager>().myHeroe;
+
+        Debug.Log("DESDE EL BANDIDO RECOJO EL HEROE + " + myHeroe.Name);
 
     }
 	
@@ -127,7 +135,14 @@ public class BanditController : MonoBehaviour, CommonActions {
 
             if (enemy.GetComponent<EnemyController>().currentHealth <= 0)
             {
-                StartCoroutine(DestroyEnemy(enemy.GetComponent<GameObject>()));
+                //primero recogeremos la experiencia del enemigo
+                myHeroe.CurrentXp += enemy.GetComponent<EnemyController>().xp;
+                GameObject.Find("UI_inGame_forPlayer/XPBar").GetComponent<XPBarController>().updateInfo(myHeroe.Level, myHeroe.XpMax, myHeroe.CurrentXp);
+
+                Debug.Log("enemigo muerto, recogida de xp + " + enemy.GetComponent<EnemyController>().xp);
+                //despues lo destruiremos
+                //StartCoroutine(DestroyEnemy(enemy.GetComponent<GameObject>()));
+                
             }
         }
 
