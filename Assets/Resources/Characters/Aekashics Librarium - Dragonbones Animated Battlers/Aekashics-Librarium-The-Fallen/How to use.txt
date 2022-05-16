@@ -1,0 +1,13 @@
+------------------
+Instructions
+------------------
+1. If you haven't install http://yanfly.moe/2017/08/04/yep-150-dragonbones-integration-rpg-maker-mv-2/
+2. Optionally, please refer to the Librarium Dragonbones Sample Project for example implementation with other monsters! http://www.akashics.moe/uncategorized/librarium-dragonbones-animated-megapack/
+3. Copy the "Settings" content bundled with the monster into the database enemy entry notes section!
+4. Remember you can freely scale the characters through the notetags!
+5. Battlers are usable both as hero actors and monsters! (place them under Actors/Enemies tabs respectively
+6. 'Settings' files on each folder are not meant nor required to be copied into your 'dragonbones_assets' folder. 
+
+-Aekashics!
+
+Refer any questions to aelibrarium@gmail.com! 

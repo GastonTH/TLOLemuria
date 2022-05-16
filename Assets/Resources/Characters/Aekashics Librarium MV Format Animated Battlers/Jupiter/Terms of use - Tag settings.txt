@@ -1,0 +1,41 @@
+Librarium Animated January #1!
+------------------------
+God Jupiter!
+------------------------
+Terms of use:
+http://www.akashics.moe/terms-of-use/  
+
+More resources:
+http://www.akashics.moe/
+
+Every plugin you might ever need:
+http://yanfly.moe/
+
+Help support more creations like this!
+https://www.patreon.com/aekashics?ty=h
+
+-Aekashics
+
+Special Thanks:
+-Yanfly!
+All my wonderful Patrons who made this pack possible!
+Susan, Swift Illusion, Anaku Senko, Antonio Silvestre, Chris Blair, Luka, Matthew Herz, Daryl Crawford, Matthew Colwin, DEdwards, Jason Martin, Eric Johnson, Eric, John Bruce, Michael Posada, zimzim, Devon Wells, Sparkbomber, Perseonn, Happy, Sean Graham, Darkstarmatryx, Kneeshaw, Rachel, Pavilion5097, Wyeth Hall,Dylan Berndt, Crocodile Dante, Newnikko, Wayne Erik Jarvis, Jeff Staley, Christopher Street, Justice667, Njali, Meteodros, Arif Idrus, Limalisha, Henry The Mighty, David Woodley,Donstarlancer, Ramez, Watermark RPG, Rayhaku808,Mario Raul, Goldschuss, Andre Lewis, Scicheng Jiang, Driftwood Gaming, Jayson Mckay, Cats777, Gabriel Marzagalli, Vincent CALAY-ROCHE, Stephen Jacobs, Haevacht, Gonzalo Serrano, ChrAndGow, Damon Marjanovich, Andy Lin, Clint Russell, Anthony, Marr,
+Alexis COmparato, Tvrtko Validzic, Ian Gates
+
+<attack animation: 10>
+<Breathing Speed: 70>
+<Sideview Battler: Jupiter>
+<Sideview Attack Motion: Swing>
+<Sideview Show Shadow>
+<Sideview Shadow Width: 200%>
+<Sideview Shadow Height: 200%>
+<Sideview Collapse>
+<Sideview Frame Speed: 15>
+<Sideview Width: 440>
+<Sideview Height: 260>
+<Sideview Anchor Y: 1.15>
+<Floating>
+<Floating Speed: 60>
+<Floating Rate: 0.1>
+<Floating Height: 1>
+

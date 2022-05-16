@@ -1,0 +1,12 @@
+﻿{
+  "name": "Arturo",
+  "gameClass":"Bandit",
+  "level": 1,
+  "maxVit": 300,
+  "currentVit": 300,
+  "maxMana": 100,
+  "currentMana": 100,
+  "str": 100,
+  "xpMax": 200,
+  "currentXp": 0
+}
