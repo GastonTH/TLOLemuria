@@ -83,9 +83,9 @@ public class GameManager : MonoBehaviour
         myHeroe.MaxVit += (int)Math.Ceiling(myHeroe.MaxVit * 0.1f); // aumentamos la vida en 10%
         myHeroe.MaxMana += (int)Math.Ceiling(myHeroe.MaxMana * 0.1f); // aumentamos el mana en 10%
         
-        // ahora actualizamos la barra de mana y vida
-        healthBarController.setMaxHealth(myHeroe.MaxVit, myHeroe.CurrentVit);
-        manaBarController.setMaxMana(myHeroe.MaxMana, myHeroe.CurrentMana);
+        // ahora actualizamos la barra de mana y vida y se decimos que cuando suba de nivel se cure la vida y rellene el mana
+        healthBarController.setMaxHealth(myHeroe.MaxVit, myHeroe.MaxVit);
+        manaBarController.setMaxMana(myHeroe.MaxMana, myHeroe.MaxMana);
         
     }
 
