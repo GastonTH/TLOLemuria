@@ -78,15 +78,21 @@ public class GameManager : MonoBehaviour
         // ahora aumentaremos el numero del nivel
         myHeroe.Level++;
 
-        // cuando suba de nivel, tiene que subir la vida maximas, mana maximo y la experiencia maxima
-        myHeroe.XpMax += (int)Math.Ceiling(myHeroe.XpMax * 0.1f); // aumentamos el xpMax en 10%
-        myHeroe.MaxVit += (int)Math.Ceiling(myHeroe.MaxVit * 0.1f); // aumentamos la vida en 10%
-        myHeroe.MaxMana += (int)Math.Ceiling(myHeroe.MaxMana * 0.1f); // aumentamos el mana en 10%
+        upgradeStats();
         
         // ahora actualizamos la barra de mana y vida y se decimos que cuando suba de nivel se cure la vida y rellene el mana
         healthBarController.setMaxHealth(myHeroe.MaxVit, myHeroe.MaxVit);
         manaBarController.setMaxMana(myHeroe.MaxMana, myHeroe.MaxMana);
         
+    }
+
+    private void upgradeStats()
+    {
+        // cuando suba de nivel, tiene que subir la vida maximas, mana maximo y la experiencia maxima
+        myHeroe.XpMax += (int)Math.Ceiling(myHeroe.XpMax * 0.1f); // aumentamos el xpMax en 10%
+        myHeroe.MaxVit += (int)Math.Ceiling(myHeroe.MaxVit * 0.1f); // aumentamos la vida en 10%
+        myHeroe.MaxMana += (int)Math.Ceiling(myHeroe.MaxMana * 0.1f); // aumentamos el mana en 10%
+        // molaria que cuando suba de nivel tambien aumente el daño de ataque, defensa, etc
     }
 
     private void ContinueGame()
