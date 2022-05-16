@@ -71,6 +71,8 @@ public class GameManager : MonoBehaviour
         
         // si no se ha pasado, el restante debe ser experiencia para el siguiente nivel, sino sera 0 y seguira igual       
         int restXP = myHeroe.CurrentXp - myHeroe.XpMax; // por ejemplo, si restXP es 120 - 100 de la total = 20 restante
+
+        //Debug.Log("restante de experiencia = " + myHeroe.CurrentXp + " - " + myHeroe.XpMax + " = " +restXP);
         myHeroe.CurrentXp = restXP; // ahora CurrentXp es 20
         
         // ahora aumentaremos el numero del nivel
@@ -83,7 +85,7 @@ public class GameManager : MonoBehaviour
         
         // ahora actualizamos la barra de mana y vida
         healthBarController.setMaxHealth(myHeroe.MaxVit, myHeroe.CurrentVit);
-        manaBarController.setMaxMana(myHeroe.MaxMana);
+        manaBarController.setMaxMana(myHeroe.MaxMana, myHeroe.CurrentMana);
         
     }
 
@@ -132,9 +134,11 @@ public class GameManager : MonoBehaviour
         // accede a la barra de vida y la rellena con los datos del heroe
         healthBarController.setMaxHealth(myHeroe.MaxVit, myHeroe.CurrentVit);
         healthBarController.setHealth(myHeroe.CurrentVit);
+        
         // accede a la barra de mana y la rellena con los datos del heroe
-        manaBarController.setMaxMana(myHeroe.MaxMana);
+        manaBarController.setMaxMana(myHeroe.MaxMana, myHeroe.CurrentMana);
         manaBarController.setMana(myHeroe.CurrentMana);
+        
         // accede a la barra de xp y la rellena con los datos del heroe
         xpBarController.updateInfo(myHeroe.Level, myHeroe.XpMax, myHeroe.CurrentXp);
         // accede a la barra de acciones y la rellena con los datos del heroe
@@ -148,9 +152,4 @@ public class GameManager : MonoBehaviour
         // 2. guardar el json en la api
     }
     
-    public Heroe returnHeroe()
-    {
-        return myHeroe;
-    }
-
 }

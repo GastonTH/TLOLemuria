@@ -7,11 +7,11 @@ public class ManaBarController : MonoBehaviour
 {
     public Slider slider;
 
-    public void setMaxMana(int mana)
+    public void setMaxMana(int mana, int currentMana)
     {
         Debug.Log("Setting max mana to " + mana);
         slider.maxValue = mana;
-        slider.value = mana;
+        slider.value = currentMana;
     }
     
     public void setMana(int mana)
