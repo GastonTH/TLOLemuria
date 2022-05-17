@@ -13,7 +13,7 @@ namespace UIScripts
 
         public void setMaxXP(int xp)
         {
-            Debug.Log("Setting max xp to " + xp);
+            //Debug.Log("Setting max xp to " + xp);
             slider.maxValue = xp;
         }
     

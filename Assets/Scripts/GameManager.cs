@@ -132,11 +132,11 @@ public class GameManager : MonoBehaviour
         // jugador creado y ahora se lo pasaremos a la Camara
         GameObject.Find("Main Camera").GetComponent<CameraController2D>().target = GameObject.Find("Player(Clone)").transform;
         
+        // rellenaremos el UI con los datos del heroe
         FillInterface();
 
     }
     
-    // esta funcion busca el UI dentro de la escena y lo rellena con los datos del heroe
     private void FillInterface()
     {
         // accede a la barra de vida y la rellena con los datos del heroe

@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class BanditController : MonoBehaviour, CommonActions {
-
+    
     [SerializeField] float      m_speed = 4.0f;
     [SerializeField] float      m_jumpForce = 7.5f;
 
@@ -15,18 +15,17 @@ public class BanditController : MonoBehaviour, CommonActions {
     private Sensor_Bandit       m_groundSensor;
     private bool                m_grounded = false;
     private bool                m_combatIdle = false;
-    private bool                _mIsDead = false;
-
+    private bool                m_isDead = false;
+    
     public Transform attackPoint;
     public float attackRange;
     public LayerMask enemieLayerMask;
     private float coldDown;
     private float timeNextAttack;
-
+    
     public Heroe myHeroe;
 
-    //public Joystick _joystick;
-
+    // Use this for initialization
     void Start () {
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
@@ -43,13 +42,13 @@ public class BanditController : MonoBehaviour, CommonActions {
         //myHeroe = GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe;
 
         //Debug.Log("DESDE EL BANDIDO RECOJO EL HEROE + " + myHeroe.Name);
-
+        
+        
     }
 	
-	// Esta funcion se actualizara cada frame
-	void FixedUpdate () {
+	// Update is called once per frame
+	void Update () {
         //Check if character just landed on the ground
-
         if (!m_grounded && m_groundSensor.State()) {
             m_grounded = true;
             m_animator.SetBool("Grounded", m_grounded);
@@ -63,19 +62,29 @@ public class BanditController : MonoBehaviour, CommonActions {
 
         // -- Handle input and movement --
         float inputX = Input.GetAxis("Horizontal");
-        
-        
-        // cambia la orientacion del personaje
+
+        // Swap direction of sprite depending on walk direction
         if (inputX > 0)
-            transform.localScale = new Vector2(-1.0f, 1.0f);
+            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
         else if (inputX < 0)
-            transform.localScale = new Vector2(1.0f, 1.0f);
+            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
         // Move
         m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
 
         //Set AirSpeed in animator
         m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
+
+        // -- Handle Animations --
+        //Death
+        if (Input.GetKeyDown("e")) {
+            if(!m_isDead)
+                m_animator.SetTrigger("Death");
+            else
+                m_animator.SetTrigger("Recover");
+
+            m_isDead = !m_isDead;
+        }
 
         //Attack
         if (timeNextAttack > 0)
@@ -89,14 +98,16 @@ public class BanditController : MonoBehaviour, CommonActions {
         }
 
         //Jump
-        else if ((Input.GetKeyDown("space") || Input.GetKeyDown("w")) && m_grounded)
+        else if ((Input.GetKeyDown("space")) && m_grounded)
         {
+            Debug.Log("saltando");
+            
             Jump();
         }
-
+        
         //Run
         else if (Mathf.Abs(inputX) > Mathf.Epsilon)
-            Run();
+            m_animator.SetInteger("AnimState", 2);
 
         //Combat Idle
         else if (m_combatIdle)
@@ -105,13 +116,16 @@ public class BanditController : MonoBehaviour, CommonActions {
         //Idle
         else
             m_animator.SetInteger("AnimState", 0);
-
     }
 
-    /*void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("OnCollisionEnter2D");
-    }*/
+        Debug.Log(col.gameObject.tag);
+        if (col.gameObject.tag == "Enemie")
+        {
+            m_animator.SetTrigger("Hurt");
+        }
+    }
 
     public void Jump()
     {

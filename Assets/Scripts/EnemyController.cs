@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(int dmg)
     {
         currentHealth -= dmg;
-        Debug.Log("vida tontito = " + currentHealth + " de " + maxHealth);
+        //Debug.Log("vida tontito = " + currentHealth + " de " + maxHealth);
 
         if (!m_animator.GetBool("isDead"))
         {
