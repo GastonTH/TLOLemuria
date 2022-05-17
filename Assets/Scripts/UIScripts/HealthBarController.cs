@@ -10,7 +10,7 @@ namespace UIScripts
 
         public void setMaxHealth(int health, int currentHealth)
         {
-            Debug.Log("Setting max health to " + health);
+            //Debug.Log("Setting max health to " + health);
             slider.maxValue = health;
             slider.value = currentHealth;
         }

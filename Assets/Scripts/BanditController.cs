@@ -5,10 +5,11 @@ using UIScripts;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class BanditController : MonoBehaviour, CommonActions {
+public class BanditController : MonoBehaviour {
     
     [SerializeField] float      m_speed = 4.0f;
     [SerializeField] float      m_jumpForce = 7.5f;
+    [SerializeField] int        tiempoEntreDaño = 1;
 
     private Animator            m_animator;
     private Rigidbody2D         m_body2d;
@@ -39,11 +40,8 @@ public class BanditController : MonoBehaviour, CommonActions {
         //_joystick = GameObject.Find("Canvas").transform.Find("Dynamic Joystick").GetComponent<Joystick>();
         
         // recogeremos el heroe del gamemanager
-        //myHeroe = GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe;
+        Debug.Log("DESDE EL BANDIDO RECOJO EL HEROE + " + myHeroe.Name);
 
-        //Debug.Log("DESDE EL BANDIDO RECOJO EL HEROE + " + myHeroe.Name);
-        
-        
     }
 	
 	// Update is called once per frame
@@ -100,8 +98,7 @@ public class BanditController : MonoBehaviour, CommonActions {
         //Jump
         else if ((Input.GetKeyDown("space")) && m_grounded)
         {
-            Debug.Log("saltando");
-            
+            //Debug.Log("saltando");
             Jump();
         }
         
@@ -117,13 +114,14 @@ public class BanditController : MonoBehaviour, CommonActions {
         else
             m_animator.SetInteger("AnimState", 0);
     }
-
+    
+    // esta funcion actuara cuando entre en contacto con el enemigo el jugador
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log(col.gameObject.tag);
+        //Debug.Log(col.gameObject.tag);
         if (col.gameObject.tag == "Enemie")
         {
-            m_animator.SetTrigger("Hurt");
+            col.gameObject.GetComponent<EnemyController>().TakeDamage(myHeroe.Str);
         }
     }
 
@@ -161,8 +159,8 @@ public class BanditController : MonoBehaviour, CommonActions {
 
                 Debug.Log("enemigo muerto, recogida de xp + " + enemy.GetComponent<EnemyController>().xp);
                 //despues lo destruiremos
-                StartCoroutine(DestroyEnemy(enemy.GetComponent<GameObject>()));
-                
+                enemy.GetComponent<EnemyController>().Die();
+
             }
         }
 
@@ -179,28 +177,25 @@ public class BanditController : MonoBehaviour, CommonActions {
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
-    IEnumerator DestroyEnemy(GameObject obj)
-    {
-        yield return new WaitForSeconds(1f);
-
-        Destroy(obj);
-    }
-    
-    private void TakeDamage()
-    {
-        m_animator.SetTrigger("Hurt");
-    }
-
     public void TakeDamage(int dmg)
     {
-        throw new NotImplementedException();
+        //primeramente hare la animacion de que me han dañado
+        m_animator.SetTrigger("Hurt");
+        // en esta funcion el heroe recibira daño
+        //m_currentHealth -= dmg;
+        GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit -= dmg;
+        Debug.Log("VIDA DEL HEROE = " + GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit );
+        GameObject.Find("GameManager").GetComponent<GameManager>().healthBarController.setHealth(
+            GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit
+        );
+        // actualizaremos el UI
     }
 
     public void DoDamage(int dmg)
     {
-        throw new NotImplementedException();
+        
     }
-
+    
     public void Run()
     {
         m_animator.SetInteger("AnimState", 2);
