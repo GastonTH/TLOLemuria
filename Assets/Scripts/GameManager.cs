@@ -156,6 +156,13 @@ public class GameManager : MonoBehaviour
     {
         // 1. serializar el heroe
         // 2. guardar el json en la api
+        
+        // 1. serializar el heroe
+        string json = JsonUtility.ToJson(myHeroe);
+        //Debug.Log("json " + json);
+        // 2. guardar el json en la api
+        //Resources.Load<TextAsset>("Files/test");
+        
     }
     
 }
