@@ -15,7 +15,7 @@ public class BanditController : MonoBehaviour, CommonActions {
     private Sensor_Bandit       m_groundSensor;
     private bool                m_grounded = false;
     private bool                m_combatIdle = false;
-    private bool                m_isDead = false;
+    private bool                _mIsDead = false;
 
     public Transform attackPoint;
     public float attackRange;
@@ -35,19 +35,19 @@ public class BanditController : MonoBehaviour, CommonActions {
         timeNextAttack = coldDown;
         
         // el boton al hacer click llamara a la funcion TakeDamage
-        GameObject.Find("Canvas").transform.Find("dmg").GetComponent<Button>().onClick.AddListener(TakeDamage);
-        GameObject.Find("Canvas").transform.Find("attack").GetComponent<Button>().onClick.AddListener(Attack);
+        //GameObject.Find("Canvas").transform.Find("dmg").GetComponent<Button>().onClick.AddListener(TakeDamage);
+        //GameObject.Find("Canvas").transform.Find("attack").GetComponent<Button>().onClick.AddListener(Attack);
         //_joystick = GameObject.Find("Canvas").transform.Find("Dynamic Joystick").GetComponent<Joystick>();
         
         // recogeremos el heroe del gamemanager
-        myHeroe = GameObject.Find("GameManager").GetComponent<GameManager>().myHeroe;
+        //myHeroe = GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe;
 
-        Debug.Log("DESDE EL BANDIDO RECOJO EL HEROE + " + myHeroe.Name);
+        //Debug.Log("DESDE EL BANDIDO RECOJO EL HEROE + " + myHeroe.Name);
 
     }
 	
 	// Esta funcion se actualizara cada frame
-	void Update () {
+	void FixedUpdate () {
         //Check if character just landed on the ground
 
         if (!m_grounded && m_groundSensor.State()) {
@@ -64,11 +64,12 @@ public class BanditController : MonoBehaviour, CommonActions {
         // -- Handle input and movement --
         float inputX = Input.GetAxis("Horizontal");
         
-        // Swap direction of sprite depending on walk direction
+        
+        // cambia la orientacion del personaje
         if (inputX > 0)
-            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+            transform.localScale = new Vector2(-1.0f, 1.0f);
         else if (inputX < 0)
-            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            transform.localScale = new Vector2(1.0f, 1.0f);
 
         // Move
         m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
@@ -88,7 +89,7 @@ public class BanditController : MonoBehaviour, CommonActions {
         }
 
         //Jump
-        else if (Input.GetKeyDown("space") && m_grounded)
+        else if ((Input.GetKeyDown("space") || Input.GetKeyDown("w")) && m_grounded)
         {
             Jump();
         }
@@ -106,6 +107,11 @@ public class BanditController : MonoBehaviour, CommonActions {
             m_animator.SetInteger("AnimState", 0);
 
     }
+
+    /*void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("OnCollisionEnter2D");
+    }*/
 
     public void Jump()
     {
@@ -141,7 +147,7 @@ public class BanditController : MonoBehaviour, CommonActions {
 
                 Debug.Log("enemigo muerto, recogida de xp + " + enemy.GetComponent<EnemyController>().xp);
                 //despues lo destruiremos
-                //StartCoroutine(DestroyEnemy(enemy.GetComponent<GameObject>()));
+                StartCoroutine(DestroyEnemy(enemy.GetComponent<GameObject>()));
                 
             }
         }
