@@ -40,7 +40,7 @@ public class BanditController : MonoBehaviour {
         //_joystick = GameObject.Find("Canvas").transform.Find("Dynamic Joystick").GetComponent<Joystick>();
         
         // recogeremos el heroe del gamemanager
-        Debug.Log("DESDE EL BANDIDO RECOJO EL HEROE + " + myHeroe.Name);
+        //Debug.Log("DESDE EL BANDIDO RECOJO EL HEROE + " + myHeroe.Name);
 
     }
 	
@@ -118,10 +118,13 @@ public class BanditController : MonoBehaviour {
     // esta funcion actuara cuando entre en contacto con el enemigo el jugador
     void OnCollisionEnter2D(Collision2D col)
     {
-        //Debug.Log(col.gameObject.tag);
+        // el bandido detectara si algun enemigo 
         if (col.gameObject.tag == "Enemie")
         {
-            col.gameObject.GetComponent<EnemyController>().TakeDamage(myHeroe.Str);
+            Debug.Log("el heroe a chocado con el enemigo");
+            m_animator.SetTrigger("Hurt");
+            //el enemigo debera hacer daño al jugador
+            /*VIVA EL ESPAGUETTI*/GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit -= col.gameObject.GetComponent<EnemyController>()._dmg;
         }
     }
 
@@ -180,22 +183,17 @@ public class BanditController : MonoBehaviour {
     public void TakeDamage(int dmg)
     {
         //primeramente hare la animacion de que me han dañado
-        m_animator.SetTrigger("Hurt");
+        //m_animator.SetTrigger("Hurt");
         // en esta funcion el heroe recibira daño
         //m_currentHealth -= dmg;
-        GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit -= dmg;
-        Debug.Log("VIDA DEL HEROE = " + GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit );
-        GameObject.Find("GameManager").GetComponent<GameManager>().healthBarController.setHealth(
-            GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit
-        );
+        //GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit -= dmg;
+        //Debug.Log("VIDA DEL HEROE = " + GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit );
+        //GameObject.Find("GameManager").GetComponent<GameManager>().healthBarController.setHealth(
+        //    GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit
+        //);
         // actualizaremos el UI
     }
 
-    public void DoDamage(int dmg)
-    {
-        
-    }
-    
     public void Run()
     {
         m_animator.SetInteger("AnimState", 2);

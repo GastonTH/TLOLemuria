@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
     
     private Animator _mAnimator;
 
-    private int _dmg = 30;
+    public int _dmg = 30;
 
     
     // Start is called before the first frame update
@@ -47,7 +47,8 @@ public class EnemyController : MonoBehaviour
         // cuando alguien toque a un enemigo, le resta vida
         if (col.gameObject.CompareTag("Player"))
         {
-            col.gameObject.GetComponent<BanditController>().TakeDamage(_dmg);
+            //col.gameObject.GetComponent<BanditController>().TakeDamage(_dmg);
+            _mAnimator.SetTrigger("Hurt");
             Debug.Log("el enemigo ha chocado con el jugador");
         }
     }
