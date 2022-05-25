@@ -7,6 +7,7 @@ public class Heroe
     public string Name { get; set; }
     public string GameClass { get; set; }
     public int Level { get; set; }
+    public int Coins { get; set; }
     public int MaxVit { get; set; }
     public int CurrentVit { get; set; }
     public int MaxMana { get; set; }
@@ -20,6 +21,7 @@ public class Heroe
         Name = h.name;
         GameClass = h.gameClass;
         Level = h.level;
+        Coins = h.coins;
         MaxVit = h.maxVit;
         CurrentVit = h.currentVit;
         MaxMana = h.maxMana;
@@ -31,12 +33,13 @@ public class Heroe
     }
     
     // constructor para cuando le pase los parametros a mano
-    public Heroe(string name, string gameClass, int maxVit, int currentVit, int maxMana, int currentMana, int str,
+    public Heroe(string name, string gameClass, int maxVit, int coins, int currentVit, int maxMana, int currentMana, int str,
         int xpMax, int currentXp)
     {
         Name = name;
         GameClass = gameClass;
         MaxVit = maxVit;
+        Coins = coins;
         CurrentVit = currentVit;
         MaxMana = maxMana;
         CurrentMana = currentMana;
@@ -44,7 +47,12 @@ public class Heroe
         XpMax = xpMax;
         CurrentXp = currentXp;
     }
-    
+
+    public override string ToString()
+    {
+        return "Heroe" + Name + "\nnivel " + Level + " con " + CurrentVit + " monedas" + "\nVit" + CurrentVit + "/" + MaxVit + "\nMana" + CurrentMana + "/" + MaxMana + "\nFuerza" + Str + "\nXP" + CurrentXp + "/" + XpMax;
+    }
+
     public void TakeDamage(int damage)
     {
         CurrentVit -= damage;

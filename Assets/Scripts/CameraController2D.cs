@@ -11,7 +11,7 @@ public class CameraController2D : MonoBehaviour
     void FixedUpdate()
     {
         var position = target.position;
-        cameraPos = new Vector3(position.x, position.y , -10);
+        cameraPos = new Vector3(position.x, position.y+2 , -10);
         // Interpola suavemente entre la posición actual de la cámara y su posición de destino.
         transform.position = Vector3.SmoothDamp(transform.position, cameraPos, ref _velocity, dampTime);
     }

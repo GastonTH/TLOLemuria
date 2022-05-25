@@ -1,7 +1,10 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using Json_Serializer;
 using UIScripts;
 using UnityEngine;
+using UnityEngine.Animations;
 using Object = UnityEngine.Object;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +18,7 @@ public class GameManager : MonoBehaviour
     public ManaBarController manaBarController;
     public XPBarController xpBarController;
     public ActionBarController actionBarController;
+    public CoinCountController coinCountController;
     
     void Start()
     {
@@ -81,6 +85,17 @@ public class GameManager : MonoBehaviour
         healthBarController.setMaxHealth(MyHeroe.MaxVit, MyHeroe.MaxVit);
         manaBarController.setMaxMana(MyHeroe.MaxMana, MyHeroe.MaxMana);
         
+        // test
+        
+        //List<ListPlayerSerializable> players = new List<ListPlayerSerializable>();
+
+        //players = JsonUtility.FromJson<PlayerSerializer>(jsonFromDB.text);
+        
+        var jsonFromDB = Resources.Load<TextAsset>("Files/test");
+        //Debug.Log("json " + jsonFromDB.text);
+        PlayerSerializer player = JsonUtility.FromJson<PlayerSerializer>(jsonFromDB.text);
+        // 2. crear el heroe con esos datos
+
     }
 
     private void UpgradeStats()
@@ -104,7 +119,7 @@ public class GameManager : MonoBehaviour
         
         Object playerPrefab = null;
         
-        switch (player.gameClass)
+        switch (MyHeroe.GameClass)
         {
             case "Bandit":
                 playerPrefab = Resources.Load("Characters/Bandits/BanditPlayer");
@@ -131,14 +146,20 @@ public class GameManager : MonoBehaviour
         
         // jugador creado y ahora se lo pasaremos a la Camara
         GameObject.Find("Main Camera").GetComponent<CameraController2D>().target = GameObject.Find("Player(Clone)").transform;
-        
         // rellenaremos el UI con los datos del heroe
         FillInterface();
 
     }
-    
+
     private void FillInterface()
     {
+        Debug.Log(MyHeroe.ToString());
+        Debug.Log("MAX VIT" + MyHeroe.MaxVit);
+        Debug.Log("COINS" + MyHeroe.Coins);
+        
+        // accediendo a las monedas y dandoles valor
+        coinCountController.setCoinCount(MyHeroe.Coins);
+        
         // accede a la barra de vida y la rellena con los datos del heroe
         healthBarController.setMaxHealth(MyHeroe.MaxVit, MyHeroe.CurrentVit);
         healthBarController.setHealth(MyHeroe.CurrentVit);
@@ -149,9 +170,11 @@ public class GameManager : MonoBehaviour
         
         // accede a la barra de xp y la rellena con los datos del heroe
         xpBarController.updateInfo(MyHeroe.Level, MyHeroe.XpMax, MyHeroe.CurrentXp);
+        
         // accede a la barra de acciones y la rellena con los datos del heroe
         //_actionBarController.setMaxActionTime(10); // aqui ira el cooldown del heroe, es decir el tiempo que tarda en dar un golpe
         //_actionBarController.setActionTime(10); 
+        
     }
     
     /*private void SaveGame()

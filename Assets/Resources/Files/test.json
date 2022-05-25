@@ -2,6 +2,7 @@
   "name": "Arturo",
   "gameClass":"Bandit",
   "level": 1,
+  "coins": 100,
   "maxVit": 300,
   "currentVit": 300,
   "maxMana": 100,

@@ -118,6 +118,9 @@ public class BanditController : MonoBehaviour {
     // esta funcion actuara cuando entre en contacto con el enemigo el jugador
     void OnCollisionEnter2D(Collision2D col)
     {
+
+        Debug.Log("TAG -> " + col.gameObject.tag);
+        
         // el bandido detectara si algun enemigo 
         if (col.gameObject.tag == "Enemie")
         {
@@ -126,6 +129,20 @@ public class BanditController : MonoBehaviour {
             //el enemigo debera hacer daño al jugador
             /*VIVA EL ESPAGUETTI*/GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit -= col.gameObject.GetComponent<EnemyController>()._dmg;
         }
+
+        // que el bandido detecte la moneda y la sume al heroe
+        if (col.gameObject.tag == "Coin")
+        {
+            Debug.Log("el heroe a cogido la moneda");
+            // primero recojemos el valor de la moneda
+            int value = col.gameObject.GetComponent<CoinController>().value;
+            // seguidamente se lo añadimos a las monedas del heroe
+            GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.Coins += value;
+            // y finalmente lo actualizamos en el canvas de las monedas
+            GameObject.Find("GameManager").GetComponent<GameManager>().coinCountController.addCoins(value);
+            Destroy(col.gameObject);
+        }
+
     }
 
     public void Jump()

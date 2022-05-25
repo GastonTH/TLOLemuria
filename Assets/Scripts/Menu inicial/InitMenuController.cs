@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 namespace Menu_inicial
 {
+
     public class InitMenuController : MonoBehaviour
     {
         public void NewGame()
@@ -13,7 +14,8 @@ namespace Menu_inicial
 
         public void ContinueGame()
         {
-        
+            // 1o - comprobar si has iniciado sesion
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     
         public void Quit()

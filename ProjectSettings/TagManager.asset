@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemie
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - Player
   - Background
   - Back Background
-  - 
+  - Coin
   - 
   - 
   - 
@@ -50,6 +51,9 @@ TagManager:
     locked: 0
   - name: Objects
     uniqueID: 3457509761
+    locked: 0
+  - name: map
+    uniqueID: 1510278869
     locked: 0
   - name: Default
     uniqueID: 0
