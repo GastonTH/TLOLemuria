@@ -1,16 +1,14 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Json_Serializer;
 using UIScripts;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.Animations;
 using Object = UnityEngine.Object;
 
 public class GameManager : MonoBehaviour
 {
     public Heroe MyHeroe;
-    private GameObject _uiPlayerUIElements;
+    public GameObject _uiPlayerUIElements;
     private bool _stateGame = false; //true = new game, false = continue game
     
     // info de la barra de vida
@@ -19,9 +17,15 @@ public class GameManager : MonoBehaviour
     public XPBarController xpBarController;
     public ActionBarController actionBarController;
     public CoinCountController coinCountController;
+    public GameObject pausePanel;
+    public GameObject confirmExit;
+
+    private bool _isPaused;
+    private Vector3 _lastPosition;
     
     void Start()
     {
+        _isPaused = false;
         if (_stateGame)
         {
             //true --> crearemos un nuevo heroe desde 0
@@ -34,7 +38,7 @@ public class GameManager : MonoBehaviour
             // en una funcion que sea continuar partida, que descargue el json de la info del personaje
         }
     }
-
+    
     void Update()
     {
         
@@ -42,6 +46,22 @@ public class GameManager : MonoBehaviour
         {
             MyHeroe.CurrentVit -= 10;
             healthBarController.setHealth(MyHeroe.CurrentVit);
+        }
+        
+        // pulsar el boton escape
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("boton escape");
+            _isPaused = !_isPaused;
+            if (_isPaused)
+            {
+                PauseGame();
+
+            }
+            else
+            {
+                ResumeGame();
+            }
         }
         
         if (Input.GetKeyDown("n"))
@@ -61,8 +81,26 @@ public class GameManager : MonoBehaviour
             }
             
             xpBarController.updateInfo(MyHeroe.Level, MyHeroe.XpMax, MyHeroe.CurrentXp);
+            
+            _lastPosition = gameObject.transform.position;
 
         }
+    }
+
+    private void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        pausePanel.SetActive(false);
+        confirmExit.SetActive(false);
+        _uiPlayerUIElements.SetActive(true);
+    }
+
+    private void PauseGame()
+    {
+        Time.timeScale = 0f;
+        pausePanel.SetActive(true);
+        confirmExit.SetActive(false);
+        _uiPlayerUIElements.SetActive(false);
     }
 
     private void Levelup()
@@ -91,9 +129,9 @@ public class GameManager : MonoBehaviour
 
         //players = JsonUtility.FromJson<PlayerSerializer>(jsonFromDB.text);
         
-        var jsonFromDB = Resources.Load<TextAsset>("Files/test");
+        //var jsonFromDB = Resources.Load<TextAsset>("Files/test");
         //Debug.Log("json " + jsonFromDB.text);
-        PlayerSerializer player = JsonUtility.FromJson<PlayerSerializer>(jsonFromDB.text);
+        //PlayerSerializer player = JsonUtility.FromJson<PlayerSerializer>(jsonFromDB.text);
         // 2. crear el heroe con esos datos
 
     }

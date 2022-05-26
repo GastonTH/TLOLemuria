@@ -5,7 +5,7 @@ using UIScripts;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class BanditController : MonoBehaviour {
+public class BanditController : MonoBehaviour, CommonActions {
     
     [SerializeField] float      m_speed = 4.0f;
     [SerializeField] float      m_jumpForce = 7.5f;
@@ -75,14 +75,14 @@ public class BanditController : MonoBehaviour {
 
         // -- Handle Animations --
         //Death
-        if (Input.GetKeyDown("e")) {
+        /*if (Input.GetKeyDown("e")) {
             if(!m_isDead)
                 m_animator.SetTrigger("Death");
             else
                 m_animator.SetTrigger("Recover");
 
             m_isDead = !m_isDead;
-        }
+        }*/
 
         //Attack
         if (timeNextAttack > 0)
@@ -154,6 +154,11 @@ public class BanditController : MonoBehaviour {
         m_groundSensor.Disable(0.2f);
     }
 
+    public Vector3 WhoIsUrLastPosition()
+    {
+        return gameObject.transform.position;
+    }
+
     private void Attack()
     {
         m_animator.SetTrigger("Attack");
@@ -209,6 +214,11 @@ public class BanditController : MonoBehaviour {
         //    GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit
         //);
         // actualizaremos el UI
+    }
+
+    public void DoDamage(int dmg)
+    {
+        throw new NotImplementedException();
     }
 
     public void Run()

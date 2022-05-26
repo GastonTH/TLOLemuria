@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemie
   - Coin
+  - Cartel
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Background
   - Back Background
   - Coin
-  - 
+  - Objects
   - 
   - 
   - 
