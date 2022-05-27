@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour
         currentHealth -= dmg;
         Debug.Log("vida tontito = " + currentHealth + " de " + maxHealth);
 
-        if (!_mAnimator.GetBool("isDead"))
+        if (!_mAnimator.GetBool("Dead"))
         {
             _mAnimator.SetTrigger("Hurt");
         }

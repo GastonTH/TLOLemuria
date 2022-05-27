@@ -24,9 +24,11 @@ public class GameManager : MonoBehaviour
 
     private bool _isPaused;
     private Vector3 _lastPosition;
+    private Vector3[] _spawnPoints = new []{new Vector3(4,-4,0), new Vector3(8,-4,0), new Vector3(12,-4,0),new Vector3(16,-4,0)};
     
     void Start()
     {
+        SpawnMonsters();
         Time.timeScale = 1f;
         _isPaused = false;
         if (_stateGame)
@@ -41,7 +43,16 @@ public class GameManager : MonoBehaviour
             // en una funcion que sea continuar partida, que descargue el json de la info del personaje
         }
     }
-    
+
+    private void SpawnMonsters()
+    {
+        for (int ii = 0; ii < _spawnPoints.Length; ii++)
+        {
+            Instantiate(Resources.Load("Characters/Bandits/HeavyBandit"), _spawnPoints[ii], Quaternion.identity);
+            Debug.Log("enemigo insanciado en posicion: " + _spawnPoints[ii].x + " - " + _spawnPoints[ii].y);
+        }
+    }
+
     void Update()
     {
 
