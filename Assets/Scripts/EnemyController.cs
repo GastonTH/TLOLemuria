@@ -42,14 +42,16 @@ public class EnemyController : MonoBehaviour
         
     }
 
+    // esta funcion detecta quien esta chocando con el
     private void OnCollisionEnter2D(Collision2D col)
     {
-        // cuando alguien toque a un enemigo, le resta vida
+        // cuando alguien toque a un enemigo, le resta vida al jugador
         if (col.gameObject.CompareTag("Player"))
         {
-            //col.gameObject.GetComponent<BanditController>().TakeDamage(_dmg);
+            // primero hare la animacion de recibir daño
             _mAnimator.SetTrigger("Hurt");
             Debug.Log("el enemigo ha chocado con el jugador");
+            col.gameObject.GetComponent<BanditController>().TakeDamage(_dmg);// enviando el daño al player
         }
     }
 

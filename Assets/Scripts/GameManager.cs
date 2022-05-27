@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
         for (int ii = 0; ii < _spawnPoints.Length; ii++)
         {
             Instantiate(Resources.Load("Characters/Bandits/HeavyBandit"), _spawnPoints[ii], Quaternion.identity);
-            Debug.Log("enemigo insanciado en posicion: " + _spawnPoints[ii].x + " - " + _spawnPoints[ii].y);
+            //Debug.Log("enemigo insanciado en posicion: " + _spawnPoints[ii].x + " - " + _spawnPoints[ii].y);
         }
     }
 
@@ -86,17 +86,21 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown("b"))
         {
-            MyHeroe.CurrentXp += 10;
-            xpBarController.setXP(MyHeroe.CurrentXp);
-            
-            if (MyHeroe.CurrentXp >= MyHeroe.XpMax)
-            {
-                Levelup();
-            }
-            
-            xpBarController.updateInfo(MyHeroe.Level, MyHeroe.XpMax, MyHeroe.CurrentXp);
-            
+            GetExperienceFromX(10);
         }
+    }
+
+    public void GetExperienceFromX(int xpIn)
+    {
+        MyHeroe.CurrentXp += xpIn;
+        xpBarController.setXP(MyHeroe.CurrentXp);
+            
+        if (MyHeroe.CurrentXp >= MyHeroe.XpMax)
+        {
+            Levelup();
+        }
+            
+        xpBarController.updateInfo(MyHeroe.Level, MyHeroe.XpMax, MyHeroe.CurrentXp);
     }
 
     public void SetLastPosition(Vector3 v)
@@ -156,17 +160,6 @@ public class GameManager : MonoBehaviour
         // ahora actualizamos la barra de mana y vida y se decimos que cuando suba de nivel se cure la vida y rellene el mana
         healthBarController.setMaxHealth(MyHeroe.MaxVit, MyHeroe.MaxVit);
         manaBarController.setMaxMana(MyHeroe.MaxMana, MyHeroe.MaxMana);
-        
-        // test
-        
-        //List<ListPlayerSerializable> players = new List<ListPlayerSerializable>();
-
-        //players = JsonUtility.FromJson<PlayerSerializer>(jsonFromDB.text);
-        
-        //var jsonFromDB = Resources.Load<TextAsset>("Files/test");
-        //Debug.Log("json " + jsonFromDB.text);
-        //PlayerSerializer player = JsonUtility.FromJson<PlayerSerializer>(jsonFromDB.text);
-        // 2. crear el heroe con esos datos
 
     }
 

@@ -96,7 +96,7 @@ public class BanditController : MonoBehaviour, CommonActions {
         }
         
         else if(Input.GetMouseButtonDown(0) && timeNextAttack <=0) {
-            Attack();
+            DoDamage();
             timeNextAttack = coldDown;
         }
 
@@ -131,15 +131,26 @@ public class BanditController : MonoBehaviour, CommonActions {
     void OnCollisionEnter2D(Collision2D col)
     {
 
-        Debug.Log("TAG -> " + col.gameObject.tag);
+       // Debug.Log("TAG -> " + col.gameObject.tag);
         
-        // el bandido detectara si algun enemigo 
+        // el bandido detectara si se golpea con un enemigo 
         if (col.gameObject.tag == "Enemie")
-        {
+        {   
+            var e = col.gameObject.GetComponent<EnemyController>();
+            var dmg = GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.Str;
             Debug.Log("el heroe a chocado con el enemigo");
             m_animator.SetTrigger("Hurt");
-            //el enemigo debera hacer daño al jugador
-            /*VIVA EL ESPAGUETTI*/GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit -= col.gameObject.GetComponent<EnemyController>()._dmg;
+            //el enemigo recibe el daño del jugador
+           e.TakeDamage(dmg);
+           if (e.currentHealth <= 0)
+           {
+               // el enemigo a muerto por colisionar con el jugador
+               //primero recogeremos la experiencia del enemigo
+               GameObject.Find("GameManager").GetComponent<GameManager>().GetExperienceFromX(e.xp);
+               Debug.Log("enemigo muerto, recogida de xp + " + e.xp);
+               //despues lo destruiremos
+               e.Die();
+           }
         }
 
         // que el bandido detecte la moneda y la sume al heroe
@@ -170,34 +181,26 @@ public class BanditController : MonoBehaviour, CommonActions {
     {
         return gameObject.transform.position;
     }
-
-    private void Attack()
-    {
-        m_animator.SetTrigger("Attack");
-        StartCoroutine(waitHit());
-        m_combatIdle = true;
-    }
     
     IEnumerator waitHit()
     {
+        var h = GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe;
         yield return new WaitForSeconds(0.4f);
         
         Collider2D[] weaponHit = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemieLayerMask);
 
         foreach (Collider2D enemy in weaponHit)
         {
-            enemy.GetComponent<EnemyController>().TakeDamage(20);
+            enemy.GetComponent<EnemyController>().TakeDamage(h.Str);
 
             if (enemy.GetComponent<EnemyController>().currentHealth <= 0)
             {
                 //primero recogeremos la experiencia del enemigo
-                myHeroe.CurrentXp += enemy.GetComponent<EnemyController>().xp;
-                GameObject.Find("UI_inGame_forPlayer/XPBar").GetComponent<XPBarController>().updateInfo(myHeroe.Level, myHeroe.XpMax, myHeroe.CurrentXp);
+                int xp = enemy.GetComponent<EnemyController>().xp;
+                
+                GameObject.Find("GameManager").GetComponent<GameManager>().GetExperienceFromX(xp);
 
                 Debug.Log("enemigo muerto, recogida de xp + " + enemy.GetComponent<EnemyController>().xp);
-                //despues lo destruiremos
-                enemy.GetComponent<EnemyController>().Die();
-
             }
         }
 
@@ -213,24 +216,23 @@ public class BanditController : MonoBehaviour, CommonActions {
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
-
+    
+    // esta funcion sirve para que el personaje reciba daño
     public void TakeDamage(int dmg)
     {
-        //primeramente hare la animacion de que me han dañado
-        //m_animator.SetTrigger("Hurt");
         // en esta funcion el heroe recibira daño
-        //m_currentHealth -= dmg;
-        //GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit -= dmg;
-        //Debug.Log("VIDA DEL HEROE = " + GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit );
-        //GameObject.Find("GameManager").GetComponent<GameManager>().healthBarController.setHealth(
-        //    GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit
-        //);
-        // actualizaremos el UI
+        var vit = GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit -= dmg;
+        
+        Debug.Log("VIDA DEL HEROE = " + GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit );
+        // y de esta forma actualizamos el ui
+        GameObject.Find("GameManager").GetComponent<GameManager>().healthBarController.setHealth(vit);
     }
 
-    public void DoDamage(int dmg)
-    {
-        throw new NotImplementedException();
+    public void DoDamage()
+    {        
+        m_animator.SetTrigger("Attack");
+        StartCoroutine(waitHit());
+        m_combatIdle = true;
     }
 
     public void Run()
