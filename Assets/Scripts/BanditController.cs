@@ -52,6 +52,11 @@ public class BanditController : MonoBehaviour, CommonActions {
             m_animator.SetBool("Grounded", m_grounded);
         }
 
+        if (m_grounded)
+        {
+            StartCoroutine(SavePosition());
+        }
+
         //Check if character just started falling
         if(m_grounded && !m_groundSensor.State()) {
             m_grounded = false;
@@ -114,7 +119,14 @@ public class BanditController : MonoBehaviour, CommonActions {
         else
             m_animator.SetInteger("AnimState", 0);
     }
-    
+
+    IEnumerator SavePosition()
+    {
+        GameObject.Find("GameManager").GetComponent<GameManager>().SetLastPosition(WhoIsUrLastPosition());
+        //Debug.Log("ultima posicion guardada");
+        yield return new WaitForSeconds(10f);
+    }
+
     // esta funcion actuara cuando entre en contacto con el enemigo el jugador
     void OnCollisionEnter2D(Collision2D col)
     {

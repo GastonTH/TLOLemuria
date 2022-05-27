@@ -3,6 +3,8 @@ using Json_Serializer;
 using UIScripts;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
 public class GameManager : MonoBehaviour
@@ -25,6 +27,7 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
+        Time.timeScale = 1f;
         _isPaused = false;
         if (_stateGame)
         {
@@ -41,7 +44,7 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        
+
         if (Input.GetKeyDown("q"))
         {
             MyHeroe.CurrentVit -= 10;
@@ -82,9 +85,13 @@ public class GameManager : MonoBehaviour
             
             xpBarController.updateInfo(MyHeroe.Level, MyHeroe.XpMax, MyHeroe.CurrentXp);
             
-            _lastPosition = gameObject.transform.position;
-
         }
+    }
+
+    public void SetLastPosition(Vector3 v)
+    {
+        _lastPosition = v;
+        //Debug.Log("last position - " + _lastPosition);
     }
 
     private void ResumeGame()
@@ -101,6 +108,22 @@ public class GameManager : MonoBehaviour
         pausePanel.SetActive(true);
         confirmExit.SetActive(false);
         _uiPlayerUIElements.SetActive(false);
+
+        GameObject.Find("ButtonResume").GetComponent<Button>().onClick.AddListener(ResumeGame);
+        GameObject.Find("ButtonExit").GetComponent<Button>().onClick.AddListener(() =>
+        {
+            pausePanel.SetActive(false);
+            confirmExit.SetActive(true);
+            GameObject.Find("ButtonExitYes").GetComponent<Button>().onClick.AddListener(() =>
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            });
+            GameObject.Find("ButtonExitNo").GetComponent<Button>().onClick.AddListener(() =>
+            {
+                pausePanel.SetActive(true);
+                confirmExit.SetActive(false);
+            });
+        });
     }
 
     private void Levelup()
