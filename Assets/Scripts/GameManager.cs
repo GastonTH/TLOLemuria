@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public CoinCountController coinCountController;
     public GameObject pausePanel;
     public GameObject confirmExit;
+    public GameObject gameOverPanel;
 
     private bool _isPaused;
     private Vector3 _lastPosition;
@@ -242,7 +243,7 @@ public class GameManager : MonoBehaviour
         
     }
     
-    /*private void SaveGame()
+    private void SaveGame()
     {
         // 1. serializar el heroe
         // 2. guardar el json en la api
@@ -254,6 +255,28 @@ public class GameManager : MonoBehaviour
         //Resources.Load<TextAsset>("Files/test");
         
     }
-    */
-    
+
+    public void ReturnLastPositionFromDead()
+    {
+        GameObject.Find("Player(Clone)").GetComponent<Rigidbody2D>().mass = 0;
+        GameObject.Find("Player(Clone)").transform.position = new Vector3(_lastPosition.x,_lastPosition.y +4,_lastPosition.z);
+        GameObject.Find("Player(Clone)").GetComponent<Rigidbody2D>().mass = 1;
+    }
+
+    public void GameOver()
+    {
+        // primero paramos el juego
+        Time.timeScale = 0;
+        _uiPlayerUIElements.SetActive(false);
+        gameOverPanel.SetActive(true);
+        GameObject.Find("GOChargePJButton").GetComponent<Button>().onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        });
+        GameObject.Find("GOExitButton").GetComponent<Button>().onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        });
+        
+    }
 }

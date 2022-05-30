@@ -11,6 +11,6 @@ public class SpawnPoint
      {
           this.position = position;
           this.name = name;
-          isAlive = true;
+          isAlive = false; // por defecto estara muerto, hasta que el script los resucite
      }
 }

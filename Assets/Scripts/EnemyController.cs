@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class EnemyController : MonoBehaviour
 {
@@ -10,11 +11,11 @@ public class EnemyController : MonoBehaviour
 
     public int currentHealth;
     
-    public int xp = 27;
+    public int xp = 40;
     
     private Animator _mAnimator;
 
-    public int _dmg = 30;
+    public int dmg = 30;
 
     
     // Start is called before the first frame update
@@ -51,7 +52,7 @@ public class EnemyController : MonoBehaviour
             // primero hare la animacion de recibir daño
             _mAnimator.SetTrigger("Hurt");
             Debug.Log("el enemigo ha chocado con el jugador");
-            col.gameObject.GetComponent<BanditController>().TakeDamage(_dmg);// enviando el daño al player
+            col.gameObject.GetComponent<BanditController>().TakeDamage(dmg);// enviando el daño al player
         }
     }
 

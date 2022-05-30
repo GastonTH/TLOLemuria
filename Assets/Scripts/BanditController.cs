@@ -152,7 +152,11 @@ public class BanditController : MonoBehaviour, CommonActions {
                e.Die();
            }
         }
+        
+    }
 
+    private void OnTriggerEnter2D(Collider2D col)
+    {
         // que el bandido detecte la moneda y la sume al heroe
         if (col.gameObject.tag == "Coin")
         {
@@ -165,7 +169,6 @@ public class BanditController : MonoBehaviour, CommonActions {
             GameObject.Find("GameManager").GetComponent<GameManager>().coinCountController.addCoins(value);
             Destroy(col.gameObject);
         }
-
     }
 
     public void Jump()
@@ -226,6 +229,13 @@ public class BanditController : MonoBehaviour, CommonActions {
         Debug.Log("VIDA DEL HEROE = " + GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit );
         // y de esta forma actualizamos el ui
         GameObject.Find("GameManager").GetComponent<GameManager>().healthBarController.setHealth(vit);
+        Debug.Log("DAMAGE RECIBIDO = " + dmg);
+        Debug.Log("CURRREENT VIT = " + GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit);
+
+        if (GameObject.Find("GameManager").GetComponent<GameManager>().MyHeroe.CurrentVit <= 0)
+        {
+            Die();
+        }
     }
 
     public void DoDamage()
@@ -238,5 +248,10 @@ public class BanditController : MonoBehaviour, CommonActions {
     public void Run()
     {
         m_animator.SetInteger("AnimState", 2);
+    }
+
+    public void Die()
+    {
+        GameObject.Find("GameManager").GetComponent<GameManager>().GameOver();
     }
 }

@@ -1,196 +1,199 @@
 fileFormatVersion: 2
-guid: 38e26291822c9b9479504c21a5a98126
+guid: 1914d95466e3d4341a618c35a56d5f82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4551999497626061999
-    second: Bringer-of-Death-SpritSheet_no-Effect_0
+      213: -750047184722822154
+    second: Bringer-of-Death-SpritSheet_0
   - first:
-      213: -4731723533944270842
-    second: Bringer-of-Death-SpritSheet_no-Effect_1
+      213: 8445469178646879675
+    second: Bringer-of-Death-SpritSheet_1
   - first:
-      213: -4765902087534015984
-    second: Bringer-of-Death-SpritSheet_no-Effect_2
+      213: -5923306537521942286
+    second: Bringer-of-Death-SpritSheet_2
   - first:
-      213: -5832765646890758737
-    second: Bringer-of-Death-SpritSheet_no-Effect_3
+      213: 8707107778256294047
+    second: Bringer-of-Death-SpritSheet_3
   - first:
-      213: 1430492987850284986
-    second: Bringer-of-Death-SpritSheet_no-Effect_4
+      213: -1846612928519130627
+    second: Bringer-of-Death-SpritSheet_4
   - first:
-      213: 5185996773442295427
-    second: Bringer-of-Death-SpritSheet_no-Effect_5
+      213: 28493216337309425
+    second: Bringer-of-Death-SpritSheet_5
   - first:
-      213: 683591744932795357
-    second: Bringer-of-Death-SpritSheet_no-Effect_6
+      213: 8118819912966400158
+    second: Bringer-of-Death-SpritSheet_6
   - first:
-      213: -3499396493913825231
-    second: Bringer-of-Death-SpritSheet_no-Effect_7
+      213: 8079674775554739003
+    second: Bringer-of-Death-SpritSheet_7
   - first:
-      213: 5405395678726468614
-    second: Bringer-of-Death-SpritSheet_no-Effect_8
+      213: 6233496440514900867
+    second: Bringer-of-Death-SpritSheet_8
   - first:
-      213: -5935658692155473707
-    second: Bringer-of-Death-SpritSheet_no-Effect_9
+      213: 6185124051430620655
+    second: Bringer-of-Death-SpritSheet_9
   - first:
-      213: 1794191405850463572
-    second: Bringer-of-Death-SpritSheet_no-Effect_10
+      213: -6243590176172294242
+    second: Bringer-of-Death-SpritSheet_10
   - first:
-      213: -2963806683211420601
-    second: Bringer-of-Death-SpritSheet_no-Effect_11
+      213: -187061038009810156
+    second: Bringer-of-Death-SpritSheet_11
   - first:
-      213: -3824377593329704924
-    second: Bringer-of-Death-SpritSheet_no-Effect_12
+      213: -2137382666133240926
+    second: Bringer-of-Death-SpritSheet_12
   - first:
-      213: 3897809641814491253
-    second: Bringer-of-Death-SpritSheet_no-Effect_13
+      213: 973881123878733542
+    second: Bringer-of-Death-SpritSheet_13
   - first:
-      213: 8954457532367114730
-    second: Bringer-of-Death-SpritSheet_no-Effect_14
+      213: -7142606862941313327
+    second: Bringer-of-Death-SpritSheet_14
   - first:
-      213: 7143291375066826113
-    second: Bringer-of-Death-SpritSheet_no-Effect_15
+      213: 7875671365747817104
+    second: Bringer-of-Death-SpritSheet_15
   - first:
-      213: 899130107254062015
-    second: Bringer-of-Death-SpritSheet_no-Effect_16
+      213: -8871867928371661369
+    second: Bringer-of-Death-SpritSheet_16
   - first:
-      213: 4679837115328899703
-    second: Bringer-of-Death-SpritSheet_no-Effect_17
+      213: 5282158534819968045
+    second: Bringer-of-Death-SpritSheet_17
   - first:
-      213: 2678502710531064070
-    second: Bringer-of-Death-SpritSheet_no-Effect_18
+      213: -422922510760239427
+    second: Bringer-of-Death-SpritSheet_18
   - first:
-      213: 6664864330029543003
-    second: Bringer-of-Death-SpritSheet_no-Effect_19
+      213: 6631781949004943560
+    second: Bringer-of-Death-SpritSheet_19
   - first:
-      213: 3146623566556835845
-    second: Bringer-of-Death-SpritSheet_no-Effect_20
+      213: 8231058446179839085
+    second: Bringer-of-Death-SpritSheet_20
   - first:
-      213: 8082744644414750382
-    second: Bringer-of-Death-SpritSheet_no-Effect_21
+      213: 751812126289047221
+    second: Bringer-of-Death-SpritSheet_21
   - first:
-      213: -7188472509360952782
-    second: Bringer-of-Death-SpritSheet_no-Effect_22
+      213: 6430574574124883500
+    second: Bringer-of-Death-SpritSheet_22
   - first:
-      213: 4274657746099481717
-    second: Bringer-of-Death-SpritSheet_no-Effect_23
+      213: -6766038691376649458
+    second: Bringer-of-Death-SpritSheet_23
   - first:
-      213: -5088622704207167661
-    second: Bringer-of-Death-SpritSheet_no-Effect_24
+      213: 2483782727947890954
+    second: Bringer-of-Death-SpritSheet_24
   - first:
-      213: 7230752440376131772
-    second: Bringer-of-Death-SpritSheet_no-Effect_25
+      213: 3687449107416671509
+    second: Bringer-of-Death-SpritSheet_25
   - first:
-      213: -7983135174681256630
-    second: Bringer-of-Death-SpritSheet_no-Effect_26
+      213: 4072241969498346569
+    second: Bringer-of-Death-SpritSheet_26
   - first:
-      213: 1800365162684236638
-    second: Bringer-of-Death-SpritSheet_no-Effect_27
+      213: 8385784872082410219
+    second: Bringer-of-Death-SpritSheet_27
   - first:
-      213: -1247417410385199110
-    second: Bringer-of-Death-SpritSheet_no-Effect_28
+      213: 2090659836945643480
+    second: Bringer-of-Death-SpritSheet_28
   - first:
-      213: 716115853364893597
-    second: Bringer-of-Death-SpritSheet_no-Effect_29
+      213: -8645012906986925910
+    second: Bringer-of-Death-SpritSheet_29
   - first:
-      213: 755167890892547285
-    second: Bringer-of-Death-SpritSheet_no-Effect_30
+      213: 8914642584386402721
+    second: Bringer-of-Death-SpritSheet_30
   - first:
-      213: 4388723571760469969
-    second: Bringer-of-Death-SpritSheet_no-Effect_31
+      213: -4964555800879844387
+    second: Bringer-of-Death-SpritSheet_31
   - first:
-      213: 2822720815099711002
-    second: Bringer-of-Death-SpritSheet_no-Effect_32
+      213: -643843233168925960
+    second: Bringer-of-Death-SpritSheet_32
   - first:
-      213: 4712537434882414687
-    second: Bringer-of-Death-SpritSheet_no-Effect_33
+      213: -1554090680192844270
+    second: Bringer-of-Death-SpritSheet_33
   - first:
-      213: -1232757863239462774
-    second: Bringer-of-Death-SpritSheet_no-Effect_34
+      213: 1900342803882551889
+    second: Bringer-of-Death-SpritSheet_34
   - first:
-      213: 2967683830400071099
-    second: Bringer-of-Death-SpritSheet_no-Effect_35
+      213: -6959215256267499731
+    second: Bringer-of-Death-SpritSheet_35
   - first:
-      213: 756475373222144264
-    second: Bringer-of-Death-SpritSheet_no-Effect_36
+      213: -8721093536611414691
+    second: Bringer-of-Death-SpritSheet_36
   - first:
-      213: 6809900610244773798
-    second: Bringer-of-Death-SpritSheet_no-Effect_37
+      213: -4818586564699129774
+    second: Bringer-of-Death-SpritSheet_37
   - first:
-      213: 8638169998759114202
-    second: Bringer-of-Death-SpritSheet_no-Effect_38
+      213: -2960163153839071603
+    second: Bringer-of-Death-SpritSheet_38
   - first:
-      213: -7605932586306218444
-    second: Bringer-of-Death-SpritSheet_no-Effect_39
+      213: -1378873467200105373
+    second: Bringer-of-Death-SpritSheet_39
   - first:
-      213: -8712927135326233336
-    second: Bringer-of-Death-SpritSheet_no-Effect_40
+      213: -6237223263896097850
+    second: Bringer-of-Death-SpritSheet_40
   - first:
-      213: -1552706059720980737
-    second: Bringer-of-Death-SpritSheet_no-Effect_41
+      213: -6342980997288685656
+    second: Bringer-of-Death-SpritSheet_41
   - first:
-      213: 5971977972953562940
-    second: Bringer-of-Death-SpritSheet_no-Effect_42
+      213: 1887337606458979207
+    second: Bringer-of-Death-SpritSheet_42
   - first:
-      213: -3838334725994571102
-    second: Bringer-of-Death-SpritSheet_no-Effect_43
+      213: 2778454290109986065
+    second: Bringer-of-Death-SpritSheet_43
   - first:
-      213: -7401223891308376638
-    second: Bringer-of-Death-SpritSheet_no-Effect_44
+      213: -6416028094590494610
+    second: Bringer-of-Death-SpritSheet_44
   - first:
-      213: 3014795474763730295
-    second: Bringer-of-Death-SpritSheet_no-Effect_45
+      213: 6824449332584486427
+    second: Bringer-of-Death-SpritSheet_45
   - first:
-      213: 1094804213907282072
-    second: Bringer-of-Death-SpritSheet_no-Effect_46
+      213: 8403998346646135688
+    second: Bringer-of-Death-SpritSheet_46
   - first:
-      213: 5002164809356596157
-    second: Bringer-of-Death-SpritSheet_no-Effect_47
+      213: 3879292089760221355
+    second: Bringer-of-Death-SpritSheet_47
   - first:
-      213: -8618370073161886560
-    second: Bringer-of-Death-SpritSheet_no-Effect_48
+      213: 29702762353113097
+    second: Bringer-of-Death-SpritSheet_48
   - first:
-      213: 7068232678376310141
-    second: Bringer-of-Death-SpritSheet_no-Effect_49
+      213: 8687428498307349624
+    second: Bringer-of-Death-SpritSheet_49
   - first:
-      213: -1914529478180313594
-    second: Bringer-of-Death-SpritSheet_no-Effect_50
+      213: -5379403063917420916
+    second: Bringer-of-Death-SpritSheet_50
   - first:
-      213: 8927217917383641786
-    second: Bringer-of-Death-SpritSheet_no-Effect_51
+      213: -1332470889934944754
+    second: Bringer-of-Death-SpritSheet_51
   - first:
-      213: 6548918626284849530
-    second: Bringer-of-Death-SpritSheet_no-Effect_52
+      213: 6565450280992480206
+    second: Bringer-of-Death-SpritSheet_52
   - first:
-      213: 7825478971551238011
-    second: Bringer-of-Death-SpritSheet_no-Effect_53
+      213: -3351220719838747524
+    second: Bringer-of-Death-SpritSheet_53
   - first:
-      213: -6760203516821600564
-    second: Bringer-of-Death-SpritSheet_no-Effect_54
+      213: -953707883773386096
+    second: Bringer-of-Death-SpritSheet_54
   - first:
-      213: -7816397596608372119
-    second: Bringer-of-Death-SpritSheet_no-Effect_55
+      213: 7592883989416276412
+    second: Bringer-of-Death-SpritSheet_55
   - first:
-      213: -8344240188789024576
-    second: Bringer-of-Death-SpritSheet_no-Effect_56
+      213: 8521500246072281666
+    second: Bringer-of-Death-SpritSheet_56
   - first:
-      213: -6267797153182997582
-    second: Bringer-of-Death-SpritSheet_no-Effect_57
+      213: -4221278012398908484
+    second: Bringer-of-Death-SpritSheet_57
   - first:
-      213: -221923589210172660
-    second: Bringer-of-Death-SpritSheet_no-Effect_58
+      213: 6754218284649242354
+    second: Bringer-of-Death-SpritSheet_58
   - first:
-      213: 7106204727198261439
-    second: Bringer-of-Death-SpritSheet_no-Effect_59
+      213: -8457060507731139865
+    second: Bringer-of-Death-SpritSheet_59
   - first:
-      213: 6071697799095963404
-    second: Bringer-of-Death-SpritSheet_no-Effect_60
+      213: 6332021275310799178
+    second: Bringer-of-Death-SpritSheet_60
   - first:
-      213: 8632134800069733741
-    second: Bringer-of-Death-SpritSheet_no-Effect_61
+      213: 3976960032240018065
+    second: Bringer-of-Death-SpritSheet_61
   - first:
-      213: 831161457289271149
-    second: Bringer-of-Death-SpritSheet_no-Effect_62
+      213: 7215576535354308736
+    second: Bringer-of-Death-SpritSheet_62
+  - first:
+      213: -216337917939532555
+    second: Bringer-of-Death-SpritSheet_63
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -307,7 +310,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_0
+      name: Bringer-of-Death-SpritSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -321,14 +324,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 153fd3e039c04d0c0800000000000000
-      internalID: -4551999497626061999
+      spriteID: 6fb70d53f0c4795f0800000000000000
+      internalID: -750047184722822154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_1
+      name: Bringer-of-Death-SpritSheet_1
       rect:
         serializedVersion: 2
         x: 140
@@ -342,14 +345,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60055eff38a855eb0800000000000000
-      internalID: -4731723533944270842
+      spriteID: bbdd1c2d875543570800000000000000
+      internalID: 8445469178646879675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_2
+      name: Bringer-of-Death-SpritSheet_2
       rect:
         serializedVersion: 2
         x: 280
@@ -363,14 +366,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01a0e3e5d4d1cddb0800000000000000
-      internalID: -4765902087534015984
+      spriteID: 2f0714f46103ccda0800000000000000
+      internalID: -5923306537521942286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_3
+      name: Bringer-of-Death-SpritSheet_3
       rect:
         serializedVersion: 2
         x: 420
@@ -384,14 +387,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fad89f62c8add0fa0800000000000000
-      internalID: -5832765646890758737
+      spriteID: f90d100646cd5d870800000000000000
+      internalID: 8707107778256294047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_4
+      name: Bringer-of-Death-SpritSheet_4
       rect:
         serializedVersion: 2
         x: 560
@@ -405,14 +408,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abfd08a1bc12ad310800000000000000
-      internalID: 1430492987850284986
+      spriteID: df139f543538f56e0800000000000000
+      internalID: -1846612928519130627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_5
+      name: Bringer-of-Death-SpritSheet_5
       rect:
         serializedVersion: 2
         x: 700
@@ -426,14 +429,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 386995fb69c58f740800000000000000
-      internalID: 5185996773442295427
+      spriteID: 1fe2b46ed6a356000800000000000000
+      internalID: 28493216337309425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_6
+      name: Bringer-of-Death-SpritSheet_6
       rect:
         serializedVersion: 2
         x: 840
@@ -447,14 +450,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd3db18f11b9c7900800000000000000
-      internalID: 683591744932795357
+      spriteID: e98eabb02b7dba070800000000000000
+      internalID: 8118819912966400158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_7
+      name: Bringer-of-Death-SpritSheet_7
       rect:
         serializedVersion: 2
         x: 980
@@ -468,14 +471,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 130e40ced65af6fc0800000000000000
-      internalID: -3499396493913825231
+      spriteID: b3bcf918665c02070800000000000000
+      internalID: 8079674775554739003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_8
+      name: Bringer-of-Death-SpritSheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -489,14 +492,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6043ce41bb2d30b40800000000000000
-      internalID: 5405395678726468614
+      spriteID: 3837d857cf3d18650800000000000000
+      internalID: 6233496440514900867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_9
+      name: Bringer-of-Death-SpritSheet_9
       rect:
         serializedVersion: 2
         x: 140
@@ -510,14 +513,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d00d123edd40ada0800000000000000
-      internalID: -5935658692155473707
+      spriteID: fed3f39fd89f5d550800000000000000
+      internalID: 6185124051430620655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_10
+      name: Bringer-of-Death-SpritSheet_10
       rect:
         serializedVersion: 2
         x: 280
@@ -531,14 +534,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45d86ccd39f36e810800000000000000
-      internalID: 1794191405850463572
+      spriteID: e9fb12290df4a59a0800000000000000
+      internalID: -6243590176172294242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_11
+      name: Bringer-of-Death-SpritSheet_11
       rect:
         serializedVersion: 2
         x: 420
@@ -552,14 +555,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74c214846817ed6d0800000000000000
-      internalID: -2963806683211420601
+      spriteID: 4130c1e1afc676df0800000000000000
+      internalID: -187061038009810156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_12
+      name: Bringer-of-Death-SpritSheet_12
       rect:
         serializedVersion: 2
         x: 560
@@ -573,14 +576,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 420ae9e57d41deac0800000000000000
-      internalID: -3824377593329704924
+      spriteID: 2a30d0c1acd7652e0800000000000000
+      internalID: -2137382666133240926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_13
+      name: Bringer-of-Death-SpritSheet_13
       rect:
         serializedVersion: 2
         x: 700
@@ -594,14 +597,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 570027eb73dc71630800000000000000
-      internalID: 3897809641814491253
+      spriteID: 6e6004ae8bbe38d00800000000000000
+      internalID: 973881123878733542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_14
+      name: Bringer-of-Death-SpritSheet_14
       rect:
         serializedVersion: 2
         x: 840
@@ -615,14 +618,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae11015deaf944c70800000000000000
-      internalID: 8954457532367114730
+      spriteID: 1d6ad1cb6ec50ec90800000000000000
+      internalID: -7142606862941313327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_15
+      name: Bringer-of-Death-SpritSheet_15
       rect:
         serializedVersion: 2
         x: 980
@@ -636,14 +639,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18548f9a8a1122360800000000000000
-      internalID: 7143291375066826113
+      spriteID: 09a3d1b41610c4d60800000000000000
+      internalID: 7875671365747817104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_16
+      name: Bringer-of-Death-SpritSheet_16
       rect:
         serializedVersion: 2
         x: 0
@@ -657,14 +660,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbbbcb9911a5a7c00800000000000000
-      internalID: 899130107254062015
+      spriteID: 7c5f933df1bc0e480800000000000000
+      internalID: -8871867928371661369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_17
+      name: Bringer-of-Death-SpritSheet_17
       rect:
         serializedVersion: 2
         x: 140
@@ -678,14 +681,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77a2ed1cf0f12f040800000000000000
-      internalID: 4679837115328899703
+      spriteID: d24fd3b833ffd4940800000000000000
+      internalID: 5282158534819968045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_18
+      name: Bringer-of-Death-SpritSheet_18
       rect:
         serializedVersion: 2
         x: 280
@@ -699,14 +702,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 601002f1604fb2520800000000000000
-      internalID: 2678502710531064070
+      spriteID: dbe9e9a973a712af0800000000000000
+      internalID: -422922510760239427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_19
+      name: Bringer-of-Death-SpritSheet_19
       rect:
         serializedVersion: 2
         x: 420
@@ -720,14 +723,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5e2593dbca5e7c50800000000000000
-      internalID: 6664864330029543003
+      spriteID: 8c09942cb82d80c50800000000000000
+      internalID: 6631781949004943560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_20
+      name: Bringer-of-Death-SpritSheet_20
       rect:
         serializedVersion: 2
         x: 560
@@ -741,14 +744,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5003e76567d0bab20800000000000000
-      internalID: 3146623566556835845
+      spriteID: d6c270afb089a3270800000000000000
+      internalID: 8231058446179839085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_21
+      name: Bringer-of-Death-SpritSheet_21
       rect:
         serializedVersion: 2
         x: 700
@@ -762,14 +765,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eae388c0e6dab2070800000000000000
-      internalID: 8082744644414750382
+      spriteID: 5be2a454529fe6a00800000000000000
+      internalID: 751812126289047221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_22
+      name: Bringer-of-Death-SpritSheet_22
       rect:
         serializedVersion: 2
         x: 840
@@ -783,14 +786,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23a21e1c65a6d3c90800000000000000
-      internalID: -7188472509360952782
+      spriteID: c2e5f58218dfd3950800000000000000
+      internalID: 6430574574124883500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_23
+      name: Bringer-of-Death-SpritSheet_23
       rect:
         serializedVersion: 2
         x: 980
@@ -804,14 +807,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57ca1ac6292a25b30800000000000000
-      internalID: 4274657746099481717
+      spriteID: e0b22ff78a33a12a0800000000000000
+      internalID: -6766038691376649458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_24
+      name: Bringer-of-Death-SpritSheet_24
       rect:
         serializedVersion: 2
         x: 0
@@ -825,14 +828,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35f7eb77c949169b0800000000000000
-      internalID: -5088622704207167661
+      spriteID: a01b59e3b3b287220800000000000000
+      internalID: 2483782727947890954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_25
+      name: Bringer-of-Death-SpritSheet_25
       rect:
         serializedVersion: 2
         x: 140
@@ -846,14 +849,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb0886bc80bc85460800000000000000
-      internalID: 7230752440376131772
+      spriteID: 515e6ee1d637c2330800000000000000
+      internalID: 3687449107416671509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_26
+      name: Bringer-of-Death-SpritSheet_26
       rect:
         serializedVersion: 2
         x: 280
@@ -867,14 +870,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4d9237ead4363190800000000000000
-      internalID: -7983135174681256630
+      spriteID: 944d26fde72838830800000000000000
+      internalID: 4072241969498346569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_27
+      name: Bringer-of-Death-SpritSheet_27
       rect:
         serializedVersion: 2
         x: 420
@@ -888,14 +891,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5348c3a39e2cf810800000000000000
-      internalID: 1800365162684236638
+      spriteID: bea015f49ea406470800000000000000
+      internalID: 8385784872082410219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_28
+      name: Bringer-of-Death-SpritSheet_28
       rect:
         serializedVersion: 2
         x: 560
@@ -909,14 +912,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aff3a5f697840bee0800000000000000
-      internalID: -1247417410385199110
+      spriteID: 8d7325f7b04830d10800000000000000
+      internalID: 2090659836945643480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_29
+      name: Bringer-of-Death-SpritSheet_29
       rect:
         serializedVersion: 2
         x: 700
@@ -930,14 +933,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9717d1139720f900800000000000000
-      internalID: 716115853364893597
+      spriteID: aa09068709eb60880800000000000000
+      internalID: -8645012906986925910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_30
+      name: Bringer-of-Death-SpritSheet_30
       rect:
         serializedVersion: 2
         x: 840
@@ -951,14 +954,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d46e6a1235ea7a00800000000000000
-      internalID: 755167890892547285
+      spriteID: 1a9fbedd23c27bb70800000000000000
+      internalID: 8914642584386402721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_31
+      name: Bringer-of-Death-SpritSheet_31
       rect:
         serializedVersion: 2
         x: 980
@@ -972,14 +975,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d79a2806d0e7ec30800000000000000
-      internalID: 4388723571760469969
+      spriteID: dd3b3fc6dca5a1bb0800000000000000
+      internalID: -4964555800879844387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_32
+      name: Bringer-of-Death-SpritSheet_32
       rect:
         serializedVersion: 2
         x: 0
@@ -993,14 +996,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1e8e1c30a15c2720800000000000000
-      internalID: 2822720815099711002
+      spriteID: 8fa5deb9dfb9017f0800000000000000
+      internalID: -643843233168925960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_33
+      name: Bringer-of-Death-SpritSheet_33
       rect:
         serializedVersion: 2
         x: 140
@@ -1014,14 +1017,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5895e434db466140800000000000000
-      internalID: 4712537434882414687
+      spriteID: 21e3c52a2c2ce6ae0800000000000000
+      internalID: -1554090680192844270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_34
+      name: Bringer-of-Death-SpritSheet_34
       rect:
         serializedVersion: 2
         x: 280
@@ -1035,14 +1038,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a80da8b314d54eee0800000000000000
-      internalID: -1232757863239462774
+      spriteID: 15aa3e036bf5f5a10800000000000000
+      internalID: 1900342803882551889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_35
+      name: Bringer-of-Death-SpritSheet_35
       rect:
         serializedVersion: 2
         x: 420
@@ -1056,14 +1059,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb5baa468b45f2920800000000000000
-      internalID: 2967683830400071099
+      spriteID: d2752be8896eb6f90800000000000000
+      internalID: -6959215256267499731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_36
+      name: Bringer-of-Death-SpritSheet_36
       rect:
         serializedVersion: 2
         x: 560
@@ -1077,14 +1080,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 809ac3e085a8f7a00800000000000000
-      internalID: 756475373222144264
+      spriteID: d5d425182a378f680800000000000000
+      internalID: -8721093536611414691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_37
+      name: Bringer-of-Death-SpritSheet_37
       rect:
         serializedVersion: 2
         x: 700
@@ -1098,14 +1101,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a70b5d4680a18e50800000000000000
-      internalID: 6809900610244773798
+      spriteID: 25873a3ac01f02db0800000000000000
+      internalID: -4818586564699129774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_38
+      name: Bringer-of-Death-SpritSheet_38
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 279
+        width: 140
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ed8329b436be6d0800000000000000
+      internalID: -2960163153839071603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bringer-of-Death-SpritSheet_39
       rect:
         serializedVersion: 2
         x: 980
@@ -1119,14 +1143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad5397dc8d1f0e770800000000000000
-      internalID: 8638169998759114202
+      spriteID: 364935d13e14ddce0800000000000000
+      internalID: -1378873467200105373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_39
+      name: Bringer-of-Death-SpritSheet_40
       rect:
         serializedVersion: 2
         x: 0
@@ -1140,14 +1164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43656a75c9c427690800000000000000
-      internalID: -7605932586306218444
+      spriteID: 6cbabaadc7ee079a0800000000000000
+      internalID: -6237223263896097850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_40
+      name: Bringer-of-Death-SpritSheet_41
       rect:
         serializedVersion: 2
         x: 140
@@ -1161,14 +1185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80d9409fee6751780800000000000000
-      internalID: -8712927135326233336
+      spriteID: 8af0e87b36439f7a0800000000000000
+      internalID: -6342980997288685656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_41
+      name: Bringer-of-Death-SpritSheet_42
       rect:
         serializedVersion: 2
         x: 280
@@ -1182,14 +1206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff60cb5b01ea37ae0800000000000000
-      internalID: -1552706059720980737
+      spriteID: 7833934bd8b213a10800000000000000
+      internalID: 1887337606458979207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_42
+      name: Bringer-of-Death-SpritSheet_43
       rect:
         serializedVersion: 2
         x: 420
@@ -1203,14 +1227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3fba54535ab0e250800000000000000
-      internalID: 5971977972953562940
+      spriteID: 1157aaab47d0f8620800000000000000
+      internalID: 2778454290109986065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_43
+      name: Bringer-of-Death-SpritSheet_44
       rect:
         serializedVersion: 2
         x: 560
@@ -1224,14 +1248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2aa1c0037ee7bbac0800000000000000
-      internalID: -3838334725994571102
+      spriteID: e68d1090170b5f6a0800000000000000
+      internalID: -6416028094590494610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_44
+      name: Bringer-of-Death-SpritSheet_45
       rect:
         serializedVersion: 2
         x: 700
@@ -1245,14 +1269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cd0e6f8512994990800000000000000
-      internalID: -7401223891308376638
+      spriteID: b169950b28055be50800000000000000
+      internalID: 6824449332584486427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_45
+      name: Bringer-of-Death-SpritSheet_46
       rect:
         serializedVersion: 2
         x: 840
@@ -1266,14 +1290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77d4fbfd284b6d920800000000000000
-      internalID: 3014795474763730295
+      spriteID: 88320d058fff0a470800000000000000
+      internalID: 8403998346646135688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_46
+      name: Bringer-of-Death-SpritSheet_47
       rect:
         serializedVersion: 2
         x: 980
@@ -1287,14 +1311,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8985b8cc1a6813f00800000000000000
-      internalID: 1094804213907282072
+      spriteID: ba8042e2a9306d530800000000000000
+      internalID: 3879292089760221355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_47
+      name: Bringer-of-Death-SpritSheet_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1308,14 +1332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db3d8a934624b6540800000000000000
-      internalID: 5002164809356596157
+      spriteID: 908b7e64186896000800000000000000
+      internalID: 29702762353113097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_48
+      name: Bringer-of-Death-SpritSheet_49
       rect:
         serializedVersion: 2
         x: 140
@@ -1329,14 +1353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a4145e9416656880800000000000000
-      internalID: -8618370073161886560
+      spriteID: 87cf635f032ff8870800000000000000
+      internalID: 8687428498307349624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_49
+      name: Bringer-of-Death-SpritSheet_50
       rect:
         serializedVersion: 2
         x: 280
@@ -1350,14 +1374,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d758d600c28671260800000000000000
-      internalID: 7068232678376310141
+      spriteID: c8edd872a658855b0800000000000000
+      internalID: -5379403063917420916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_50
+      name: Bringer-of-Death-SpritSheet_51
       rect:
         serializedVersion: 2
         x: 420
@@ -1371,14 +1395,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6066c0d45993e65e0800000000000000
-      internalID: -1914529478180313594
+      spriteID: e0601eb09cc128de0800000000000000
+      internalID: -1332470889934944754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_51
+      name: Bringer-of-Death-SpritSheet_52
       rect:
         serializedVersion: 2
         x: 560
@@ -1392,14 +1416,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba872eb569d3eb70800000000000000
-      internalID: 8927217917383641786
+      spriteID: ecb9b0dce3a2d1b50800000000000000
+      internalID: 6565450280992480206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_52
+      name: Bringer-of-Death-SpritSheet_53
       rect:
         serializedVersion: 2
         x: 700
@@ -1413,14 +1437,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a79c5aeface62ea50800000000000000
-      internalID: 6548918626284849530
+      spriteID: c742516c2821e71d0800000000000000
+      internalID: -3351220719838747524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_53
+      name: Bringer-of-Death-SpritSheet_54
       rect:
         serializedVersion: 2
         x: 840
@@ -1434,14 +1458,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b77c998d9afa99c60800000000000000
-      internalID: 7825478971551238011
+      spriteID: 092a2309bbfb3c2f0800000000000000
+      internalID: -953707883773386096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_54
+      name: Bringer-of-Death-SpritSheet_55
       rect:
         serializedVersion: 2
         x: 980
@@ -1455,14 +1479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc68082f7beee22a0800000000000000
-      internalID: -6760203516821600564
+      spriteID: cb178e172c75f5960800000000000000
+      internalID: 7592883989416276412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_55
+      name: Bringer-of-Death-SpritSheet_56
       rect:
         serializedVersion: 2
         x: 0
@@ -1476,14 +1500,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 962e0f68cc3968390800000000000000
-      internalID: -7816397596608372119
+      spriteID: 24aca803353724670800000000000000
+      internalID: 8521500246072281666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_56
+      name: Bringer-of-Death-SpritSheet_57
       rect:
         serializedVersion: 2
         x: 140
@@ -1497,14 +1521,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c811ba02cd433c80800000000000000
-      internalID: -8344240188789024576
+      spriteID: cbbcbc453020b65c0800000000000000
+      internalID: -4221278012398908484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_57
+      name: Bringer-of-Death-SpritSheet_58
       rect:
         serializedVersion: 2
         x: 280
@@ -1518,14 +1542,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b3a25882bf4409a0800000000000000
-      internalID: -6267797153182997582
+      spriteID: 2fe57f79ebdcbbd50800000000000000
+      internalID: 6754218284649242354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_58
+      name: Bringer-of-Death-SpritSheet_59
       rect:
         serializedVersion: 2
         x: 420
@@ -1539,14 +1563,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0319d1eba19becf0800000000000000
-      internalID: -221923589210172660
+      spriteID: 7e263b0964c72aa80800000000000000
+      internalID: -8457060507731139865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_59
+      name: Bringer-of-Death-SpritSheet_60
       rect:
         serializedVersion: 2
         x: 560
@@ -1560,14 +1584,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb0aad19c8f4e9260800000000000000
-      internalID: 7106204727198261439
+      spriteID: a49bd192dcbdfd750800000000000000
+      internalID: 6332021275310799178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_60
+      name: Bringer-of-Death-SpritSheet_61
       rect:
         serializedVersion: 2
         x: 700
@@ -1581,14 +1605,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0fc2a2aaf0034450800000000000000
-      internalID: 6071697799095963404
+      spriteID: 192a7971410013730800000000000000
+      internalID: 3976960032240018065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_61
+      name: Bringer-of-Death-SpritSheet_62
       rect:
         serializedVersion: 2
         x: 840
@@ -1602,14 +1626,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6da17b9dd08bc770800000000000000
-      internalID: 8632134800069733741
+      spriteID: 088ff6f01a0e22460800000000000000
+      internalID: 7215576535354308736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bringer-of-Death-SpritSheet_no-Effect_62
+      name: Bringer-of-Death-SpritSheet_63
       rect:
         serializedVersion: 2
         x: 980
@@ -1623,8 +1647,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6719b411f0e88b00800000000000000
-      internalID: 831161457289271149
+      spriteID: 5fc34c15fc96ffcf0800000000000000
+      internalID: -216337917939532555
       vertices: []
       indices: 
       edges: []
@@ -1640,69 +1664,70 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bringer-of-Death-SpritSheet_no-Effect_34: -1232757863239462774
-      Bringer-of-Death-SpritSheet_no-Effect_27: 1800365162684236638
-      Bringer-of-Death-SpritSheet_no-Effect_26: -7983135174681256630
-      Bringer-of-Death-SpritSheet_no-Effect_44: -7401223891308376638
-      Bringer-of-Death-SpritSheet_no-Effect_7: -3499396493913825231
-      Bringer-of-Death-SpritSheet_no-Effect_35: 2967683830400071099
-      Bringer-of-Death-SpritSheet_no-Effect_6: 683591744932795357
-      Bringer-of-Death-SpritSheet_no-Effect_45: 3014795474763730295
-      Bringer-of-Death-SpritSheet_no-Effect_31: 4388723571760469969
-      Bringer-of-Death-SpritSheet_no-Effect_33: 4712537434882414687
-      Bringer-of-Death-SpritSheet_no-Effect_28: -1247417410385199110
-      Bringer-of-Death-SpritSheet_no-Effect_52: 6548918626284849530
-      Bringer-of-Death-SpritSheet_no-Effect_22: -7188472509360952782
-      Bringer-of-Death-SpritSheet_no-Effect_62: 831161457289271149
-      Bringer-of-Death-SpritSheet_no-Effect_50: -1914529478180313594
-      Bringer-of-Death-SpritSheet_no-Effect_59: 7106204727198261439
-      Bringer-of-Death-SpritSheet_no-Effect_60: 6071697799095963404
-      Bringer-of-Death-SpritSheet_no-Effect_21: 8082744644414750382
-      Bringer-of-Death-SpritSheet_no-Effect_19: 6664864330029543003
-      Bringer-of-Death-SpritSheet_no-Effect_56: -8344240188789024576
-      Bringer-of-Death-SpritSheet_no-Effect_38: 8638169998759114202
-      Bringer-of-Death-SpritSheet_no-Effect_42: 5971977972953562940
-      Bringer-of-Death-SpritSheet_no-Effect_41: -1552706059720980737
-      Bringer-of-Death-SpritSheet_no-Effect_15: 7143291375066826113
-      Bringer-of-Death-SpritSheet_no-Effect_53: 7825478971551238011
-      Bringer-of-Death-SpritSheet_no-Effect_39: -7605932586306218444
-      Bringer-of-Death-SpritSheet_no-Effect_3: -5832765646890758737
-      Bringer-of-Death-SpritSheet_no-Effect_46: 1094804213907282072
-      Bringer-of-Death-SpritSheet_no-Effect_8: 5405395678726468614
-      Bringer-of-Death-SpritSheet_no-Effect_24: -5088622704207167661
-      Bringer-of-Death-SpritSheet_no-Effect_16: 899130107254062015
-      Bringer-of-Death-SpritSheet_no-Effect_11: -2963806683211420601
-      Bringer-of-Death-SpritSheet_no-Effect_55: -7816397596608372119
-      Bringer-of-Death-SpritSheet_no-Effect_49: 7068232678376310141
-      Bringer-of-Death-SpritSheet_no-Effect_25: 7230752440376131772
-      Bringer-of-Death-SpritSheet_no-Effect_29: 716115853364893597
-      Bringer-of-Death-SpritSheet_no-Effect_2: -4765902087534015984
-      Bringer-of-Death-SpritSheet_no-Effect_10: 1794191405850463572
-      Bringer-of-Death-SpritSheet_no-Effect_4: 1430492987850284986
-      Bringer-of-Death-SpritSheet_no-Effect_9: -5935658692155473707
-      Bringer-of-Death-SpritSheet_no-Effect_30: 755167890892547285
-      Bringer-of-Death-SpritSheet_no-Effect_14: 8954457532367114730
-      Bringer-of-Death-SpritSheet_no-Effect_32: 2822720815099711002
-      Bringer-of-Death-SpritSheet_no-Effect_20: 3146623566556835845
-      Bringer-of-Death-SpritSheet_no-Effect_36: 756475373222144264
-      Bringer-of-Death-SpritSheet_no-Effect_51: 8927217917383641786
-      Bringer-of-Death-SpritSheet_no-Effect_0: -4551999497626061999
-      Bringer-of-Death-SpritSheet_no-Effect_12: -3824377593329704924
-      Bringer-of-Death-SpritSheet_no-Effect_13: 3897809641814491253
-      Bringer-of-Death-SpritSheet_no-Effect_17: 4679837115328899703
-      Bringer-of-Death-SpritSheet_no-Effect_37: 6809900610244773798
-      Bringer-of-Death-SpritSheet_no-Effect_23: 4274657746099481717
-      Bringer-of-Death-SpritSheet_no-Effect_61: 8632134800069733741
-      Bringer-of-Death-SpritSheet_no-Effect_57: -6267797153182997582
-      Bringer-of-Death-SpritSheet_no-Effect_58: -221923589210172660
-      Bringer-of-Death-SpritSheet_no-Effect_43: -3838334725994571102
-      Bringer-of-Death-SpritSheet_no-Effect_47: 5002164809356596157
-      Bringer-of-Death-SpritSheet_no-Effect_48: -8618370073161886560
-      Bringer-of-Death-SpritSheet_no-Effect_1: -4731723533944270842
-      Bringer-of-Death-SpritSheet_no-Effect_18: 2678502710531064070
-      Bringer-of-Death-SpritSheet_no-Effect_40: -8712927135326233336
-      Bringer-of-Death-SpritSheet_no-Effect_5: 5185996773442295427
-      Bringer-of-Death-SpritSheet_no-Effect_54: -6760203516821600564
+      Bringer-of-Death-SpritSheet_51: -1332470889934944754
+      Bringer-of-Death-SpritSheet_12: -2137382666133240926
+      Bringer-of-Death-SpritSheet_26: 4072241969498346569
+      Bringer-of-Death-SpritSheet_9: 6185124051430620655
+      Bringer-of-Death-SpritSheet_48: 29702762353113097
+      Bringer-of-Death-SpritSheet_5: 28493216337309425
+      Bringer-of-Death-SpritSheet_31: -4964555800879844387
+      Bringer-of-Death-SpritSheet_11: -187061038009810156
+      Bringer-of-Death-SpritSheet_60: 6332021275310799178
+      Bringer-of-Death-SpritSheet_56: 8521500246072281666
+      Bringer-of-Death-SpritSheet_36: -8721093536611414691
+      Bringer-of-Death-SpritSheet_15: 7875671365747817104
+      Bringer-of-Death-SpritSheet_47: 3879292089760221355
+      Bringer-of-Death-SpritSheet_55: 7592883989416276412
+      Bringer-of-Death-SpritSheet_18: -422922510760239427
+      Bringer-of-Death-SpritSheet_24: 2483782727947890954
+      Bringer-of-Death-SpritSheet_30: 8914642584386402721
+      Bringer-of-Death-SpritSheet_61: 3976960032240018065
+      Bringer-of-Death-SpritSheet_29: -8645012906986925910
+      Bringer-of-Death-SpritSheet_44: -6416028094590494610
+      Bringer-of-Death-SpritSheet_34: 1900342803882551889
+      Bringer-of-Death-SpritSheet_40: -6237223263896097850
+      Bringer-of-Death-SpritSheet_7: 8079674775554739003
+      Bringer-of-Death-SpritSheet_33: -1554090680192844270
+      Bringer-of-Death-SpritSheet_63: -216337917939532555
+      Bringer-of-Death-SpritSheet_37: -4818586564699129774
+      Bringer-of-Death-SpritSheet_8: 6233496440514900867
+      Bringer-of-Death-SpritSheet_16: -8871867928371661369
+      Bringer-of-Death-SpritSheet_42: 1887337606458979207
+      Bringer-of-Death-SpritSheet_10: -6243590176172294242
+      Bringer-of-Death-SpritSheet_45: 6824449332584486427
+      Bringer-of-Death-SpritSheet_58: 6754218284649242354
+      Bringer-of-Death-SpritSheet_53: -3351220719838747524
+      Bringer-of-Death-SpritSheet_3: 8707107778256294047
+      Bringer-of-Death-SpritSheet_62: 7215576535354308736
+      Bringer-of-Death-SpritSheet_32: -643843233168925960
+      Bringer-of-Death-SpritSheet_1: 8445469178646879675
+      Bringer-of-Death-SpritSheet_6: 8118819912966400158
+      Bringer-of-Death-SpritSheet_21: 751812126289047221
+      Bringer-of-Death-SpritSheet_41: -6342980997288685656
+      Bringer-of-Death-SpritSheet_0: -750047184722822154
+      Bringer-of-Death-SpritSheet_22: 6430574574124883500
+      Bringer-of-Death-SpritSheet_20: 8231058446179839085
+      Bringer-of-Death-SpritSheet_17: 5282158534819968045
+      Bringer-of-Death-SpritSheet_2: -5923306537521942286
+      Bringer-of-Death-SpritSheet_57: -4221278012398908484
+      Bringer-of-Death-SpritSheet_25: 3687449107416671509
+      Bringer-of-Death-SpritSheet_49: 8687428498307349624
+      Bringer-of-Death-SpritSheet_54: -953707883773386096
+      Bringer-of-Death-SpritSheet_59: -8457060507731139865
+      Bringer-of-Death-SpritSheet_50: -5379403063917420916
+      Bringer-of-Death-SpritSheet_52: 6565450280992480206
+      Bringer-of-Death-SpritSheet_13: 973881123878733542
+      Bringer-of-Death-SpritSheet_19: 6631781949004943560
+      Bringer-of-Death-SpritSheet_23: -6766038691376649458
+      Bringer-of-Death-SpritSheet_43: 2778454290109986065
+      Bringer-of-Death-SpritSheet_38: -2960163153839071603
+      Bringer-of-Death-SpritSheet_28: 2090659836945643480
+      Bringer-of-Death-SpritSheet_14: -7142606862941313327
+      Bringer-of-Death-SpritSheet_39: -1378873467200105373
+      Bringer-of-Death-SpritSheet_4: -1846612928519130627
+      Bringer-of-Death-SpritSheet_35: -6959215256267499731
+      Bringer-of-Death-SpritSheet_27: 8385784872082410219
+      Bringer-of-Death-SpritSheet_46: 8403998346646135688
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
