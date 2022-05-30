@@ -269,6 +269,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         _uiPlayerUIElements.SetActive(false);
         gameOverPanel.SetActive(true);
+        gameOverPanel.GetComponent<Animator>().SetTrigger("GameOver");
         GameObject.Find("GOChargePJButton").GetComponent<Button>().onClick.AddListener(() =>
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
