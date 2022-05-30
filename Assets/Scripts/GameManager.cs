@@ -207,7 +207,7 @@ public class GameManager : MonoBehaviour
         }
 
         playerPrefab.name = "Player";
-        Instantiate(playerPrefab, new Vector2(0, 0), Quaternion.identity);
+        Instantiate(playerPrefab, new Vector2(-36, 0), Quaternion.identity);
         
         // jugador creado y ahora se lo pasaremos a la Camara
         GameObject.Find("Main Camera").GetComponent<CameraController2D>().target = GameObject.Find("Player(Clone)").transform;
