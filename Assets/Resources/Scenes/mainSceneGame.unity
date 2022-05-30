@@ -21679,6 +21679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text_UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4390068050345265603, guid: a05f5c1158356e04e8425e0952de45be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5963333117691772506, guid: a05f5c1158356e04e8425e0952de45be, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -21956,6 +21960,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8814454474710304496, guid: 1767af23ef51b1b4eabc52517c9bc058, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8800449
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814454474710304496, guid: 1767af23ef51b1b4eabc52517c9bc058, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.005867958
+      objectReference: {fileID: 0}
     - target: {fileID: 8814454474710304499, guid: 1767af23ef51b1b4eabc52517c9bc058, type: 3}
       propertyPath: m_Name
       value: Flag_respawn

@@ -44,9 +44,17 @@ public class SpawnMangerController : MonoBehaviour
 
     public void ResuciteAll()
     {
+        
+    }
+
+    public void Respawn()
+    {
         for (int ii = 0; ii < _spawnPoints.Count; ii++)
         {
-            Instantiate(Resources.Load("Characters/" + _spawnPoints[ii].name), _spawnPoints[ii].position, Quaternion.identity);
+            if (!_spawnPoints[ii].isAlive)
+            {
+                Instantiate(Resources.Load("Characters/" + _spawnPoints[ii].name), _spawnPoints[ii].position, Quaternion.identity);
+            }
             
         }
     }
