@@ -57,7 +57,18 @@ public class BanditController : MonoBehaviour, CommonActions {
             StartCoroutine(SavePosition());
         }
 
-        //Check if character just started falling
+        // check press e key
+        if (Input.GetKeyUp(KeyCode.RightControl) || Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            m_speed = 4.0f;
+        }
+        if (Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            m_speed = 6.5f;
+        }
+        
+
+            //Check if character just started falling
         if(m_grounded && !m_groundSensor.State()) {
             m_grounded = false;
             m_animator.SetBool("Grounded", m_grounded);

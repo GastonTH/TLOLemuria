@@ -13,16 +13,16 @@ public class SpawnMangerController : MonoBehaviour
         _spawnPoints = new List<SpawnPoint>();
         
         _spawnPoints.Add(
-            new SpawnPoint(new Vector3(4,-4,0), "Bandits/HeavyBandit")
+            new SpawnPoint(new Vector3(4,-4,0), "Bandits/HeavyBandit", "HeavyBandit1")
             );
         _spawnPoints.Add(
-            new SpawnPoint(new Vector3(8,-4,0), "Bandits/HeavyBandit")
+            new SpawnPoint(new Vector3(8,-4,0), "Bandits/HeavyBandit", "HeavyBandit2")
             );
         _spawnPoints.Add(
-            new SpawnPoint(new Vector3(12,-4,0), "Bandits/HeavyBandit")
+            new SpawnPoint(new Vector3(12,-4,0), "Bandits/HeavyBandit", "HeavyBandit3")
             );
         _spawnPoints.Add(
-            new SpawnPoint(new Vector3(16,-4,0), "Bandits/HeavyBandit")
+            new SpawnPoint(new Vector3(16,-4,0), "Bandits/HeavyBandit", "HeavyBandit4")
             );
         /*_spawnPoints.Add(
             new SpawnPoint(new Vector3(4,-4,0), "Bandits/HeavyBandit")

@@ -171,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_speed: 4
   m_jumpForce: 7.5
+  "tiempoEntreDa\xF1o": 1
   attackPoint: {fileID: 6429400464219449549}
   attackRange: 0.5
   enemieLayerMask:
