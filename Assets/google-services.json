@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "499521175904",
+    "project_id": "unity-the-leyend-of-lemuria",
+    "storage_bucket": "unity-the-leyend-of-lemuria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499521175904:android:abee7eb05c7c0ee867de05",
+        "android_client_info": {
+          "package_name": "com.gastondev.theleyendoflemuria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499521175904-op2pfintjsj9jr097oecome0m8ml2eit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAowisRGVVYukax7A5nIVLItwwLiSaAMEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499521175904-op2pfintjsj9jr097oecome0m8ml2eit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
