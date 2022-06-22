@@ -87,7 +87,7 @@ public class ColorSwap_HeroKnight : MonoBehaviour
         }
     }
 
-
+/*
     public void SwapColors(List<int> indexes, List<Color> colors)
     {
         for (int i = 0; i < indexes.Count; ++i)
@@ -96,7 +96,7 @@ public class ColorSwap_HeroKnight : MonoBehaviour
             m_colorSwapTex.SetPixel(indexes[i], 0, colors[i]);
         }
         m_colorSwapTex.Apply();
-    }
+    }*/
 
     public void ClearColor(int index)
     {

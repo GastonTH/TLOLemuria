@@ -19,5 +19,7 @@ namespace Json_Serializer
         public int xpMax;
         public int currentXp;
         public int[] inventory;
+        public float[] position = new float[3];
     }
+
 }

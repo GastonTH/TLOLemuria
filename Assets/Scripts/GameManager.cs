@@ -1,16 +1,14 @@
-using System;
 using Json_Serializer;
 using UIScripts;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
-using Object = UnityEngine.Object;
 
 public class GameManager : MonoBehaviour
 {
     public Heroe MyHeroe;
-    public GameObject _uiPlayerUIElements;
+    public GameObject uiPlayerUIElements;
     private bool _stateGame = false; //true = new game, false = continue game
     
     // info de la barra de vida
@@ -115,7 +113,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         pausePanel.SetActive(false);
         confirmExit.SetActive(false);
-        _uiPlayerUIElements.SetActive(true);
+        uiPlayerUIElements.SetActive(true);
     }
 
     private void PauseGame()
@@ -123,7 +121,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         pausePanel.SetActive(true);
         confirmExit.SetActive(false);
-        _uiPlayerUIElements.SetActive(false);
+        uiPlayerUIElements.SetActive(false);
 
         GameObject.Find("ButtonResume").GetComponent<Button>().onClick.AddListener(ResumeGame);
         GameObject.Find("ButtonExit").GetComponent<Button>().onClick.AddListener(() =>
@@ -133,6 +131,7 @@ public class GameManager : MonoBehaviour
             GameObject.Find("ButtonExitYes").GetComponent<Button>().onClick.AddListener(() =>
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                SaveGame();
             });
             GameObject.Find("ButtonExitNo").GetComponent<Button>().onClick.AddListener(() =>
             {
@@ -167,10 +166,11 @@ public class GameManager : MonoBehaviour
     private void UpgradeStats()
     {
         // cuando suba de nivel, tiene que subir la vida maximas, mana maximo y la experiencia maxima
-        MyHeroe.XpMax += (int)Math.Ceiling(MyHeroe.XpMax * 0.1f); // aumentamos el xpMax en 10%
-        MyHeroe.MaxVit += (int)Math.Ceiling(MyHeroe.MaxVit * 0.1f); // aumentamos la vida en 10%
-        MyHeroe.MaxMana += (int)Math.Ceiling(MyHeroe.MaxMana * 0.1f); // aumentamos el mana en 10%
+        MyHeroe.XpMax += (int)(MyHeroe.XpMax * 0.1f); // aumentamos el xpMax en 10%
+        MyHeroe.MaxVit += (int)(MyHeroe.MaxVit * 0.1f); // aumentamos la vida en 10%
+        MyHeroe.MaxMana += (int)(MyHeroe.MaxMana * 0.1f); // aumentamos el mana en 10%
         //TODO molaria que cuando suba de nivel tambien aumente el daño de ataque, defensa, etc
+        
     }
 
     private void ContinueGame()
@@ -182,6 +182,8 @@ public class GameManager : MonoBehaviour
         PlayerSerializer player = JsonUtility.FromJson<PlayerSerializer>(jsonFromDB.text);
         // 2. crear el heroe con esos datos
         MyHeroe = new Heroe(player);
+        Debug.Log("[ ? ] --> x= " + MyHeroe.lastPosition[0] + ", y= " + MyHeroe.lastPosition[1] + ", z= " + MyHeroe.lastPosition[2]);
+
         
         Object playerPrefab = null;
         
@@ -253,7 +255,10 @@ public class GameManager : MonoBehaviour
         //Debug.Log("json " + json);
         // 2. guardar el json en la api
         //Resources.Load<TextAsset>("Files/test");
-        
+        MyHeroe.lastPosition = new []{_lastPosition.x,_lastPosition.y,_lastPosition.z};
+        Debug.Log("[ LAST POSITION TO SAVE] --> x= " + MyHeroe.lastPosition[0] + ", y= " + MyHeroe.lastPosition[1] + ", z= " + MyHeroe.lastPosition[2]);
+
+
     }
 
     public void ReturnLastPositionFromDead()
@@ -267,7 +272,7 @@ public class GameManager : MonoBehaviour
     {
         // primero paramos el juego
         Time.timeScale = 0;
-        _uiPlayerUIElements.SetActive(false);
+        uiPlayerUIElements.SetActive(false);
         gameOverPanel.SetActive(true);
         gameOverPanel.GetComponent<Animator>().SetTrigger("GameOver");
         GameObject.Find("GOChargePJButton").GetComponent<Button>().onClick.AddListener(() =>

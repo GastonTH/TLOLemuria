@@ -9,5 +9,6 @@
   "currentMana": 100,
   "str": 100,
   "xpMax": 200,
-  "currentXp": 0
+  "currentXp": 0,
+  "position":[12,12,12]
 }

@@ -15,7 +15,8 @@ public class Heroe
     public int Str { get; set; }
     public int XpMax { get; set; }
     public int CurrentXp { get; set; }
-    
+    public float[] lastPosition { get; set; }
+
     public Heroe(PlayerSerializer h)
     {
         Name = h.name;
@@ -29,6 +30,7 @@ public class Heroe
         Str = h.str;
         XpMax = h.xpMax;
         CurrentXp = h.currentXp;
+        lastPosition = h.position;
 
     }
     
