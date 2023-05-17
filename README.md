@@ -1,4 +1,4 @@
-# The Leyend of Lemuria
+# The Legend of Lemuria
 Unity proyect
 
 # Bienvenido a mi primer videojuego (o al menos el intento)
